@@ -10,4 +10,5 @@ if ( Test-Path -Path $ENV:USERPROFILE\Downloads\Jarvim ) {
 } else {
     New-Item -Path "$ENV:USERPROFILE\Downloads" -Name "Jarvim" -ItemType "directory" -Force | Out-Null
     Invoke-Expression "git clone --quiet https://github.com/Jarmos-san/jarvim.git $ENV:USERPROFILE\Downloads\Jarvim"
+    Write-Host "Downloading the necessary files to $ENV:USERPROFILE\Downloads\Jarvim"
 }
