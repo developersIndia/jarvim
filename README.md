@@ -41,3 +41,36 @@ snippet which should download & configure Neovim to work right away!
 TODO: Add one-liner script to download the Jarvim configurations
 ```
 
+## Credits & Acknowledgement
+
+This project came to fuition due to inspiration from the following projects &
+their respective maintainers:
+
+- [LunarVim](https://github.com/LunarVim/LunarVim) maintained by [Christian
+  Chiarulli](https://github.com/ChristianChiarulli)
+- [disrupted/dotfiles](https://github.com/disrupted/dotfiles/tree/master/.config/nvim)
+  maintained by [Salomon Popp](https://github.com/disrupted)
+
+If you find Jarvim helpful, do note, it exists only on the shoulders of the
+giants & because of their contributions. Do check out their projects &
+considering supporting them through whatever means possible for you.
+
+## Consider Supporting Jarvim
+
+Jarvim is supposed to be a community-maintained project without which it's
+nothing more than "just any other __personal__ Neovim configuration". Hence you
+support in whatever means will be quite helpful towards maintaining the project.
+
+You can support this project by:
+
+1. Contributing by reporting issues, bugs & improvements.
+2. Help maintain the project when necessary.
+3. And/or send out a [Token of
+   Appreciation](https://www.buymeacoffee.com/jarmos) with some :heart:
+
+## License & Usage Terms & Conditions
+
+All the source code developed in this project are licensed under the T&Cs of the
+MIT license unless otherwise noted. So, you're free to copy & distribute it as
+you wish but with due credit & acknowledgement. For more information, refer to
+the [LICENSE](./LICENSE).
