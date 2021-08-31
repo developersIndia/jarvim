@@ -1,5 +1,10 @@
 # Jarvim: A Sensible IDE-like Configured Environment for Neovim
 
+![GitHub repo
+size](https://img.shields.io/github/repo-size/Jarmos-san/jarvim?label=Repo%20Size&logo=GitHub&style=flat-square)
+[Buy Me a
+Coffee](![Sponsor](https://img.shields.io/badge/Sponsor-With%20a%20Coffee%2FBook-yellow)) ![Twitter Follow](https://img.shields.io/twitter/follow/Jarmosan?style=social) ![GitHub](https://img.shields.io/github/license/Jarmos-san/Jarvim?label=License&logo=Github)
+
 ![Jarvim's cover image](./assets/Jarvim.png)
 
 **DISCLAIMER**: This project is a Work-in-Progress project, so expect to come across
