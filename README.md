@@ -2,7 +2,7 @@
 
 ![Jarvim's cover image](./assets/Jarvim.png)
 
-**NOTE**: This project is a Work-in-Progress project, so expect to come across
+**DISCLAIMER**: This project is a Work-in-Progress project, so expect to come across
 a few breaking changes. If you come across any breaking changes, feel free to
 open an [Issue thread](https://github.com/Jarmos-san/jarvim/issues/new/choose).
 
