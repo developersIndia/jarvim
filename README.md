@@ -38,9 +38,7 @@ snippet which should download & configure Neovim to work right away!
 **On Linux/MacOS**
 
 ```shell
-curl -Ss
-https://raw.githubusercontent.com/Jarmos-san/jarvim/dev/scripts/installer.sh |
-bash
+curl -Ss https://raw.githubusercontent.com/Jarmos-san/jarvim/dev/scripts/installer.sh | bash
 ```
 
 ## Credits & Acknowledgement
