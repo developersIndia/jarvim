@@ -32,7 +32,7 @@ snippet which should download & configure Neovim to work right away!
 **On Windows PowerShell**
 
 ```powershell
-(iwr "https://raw.githubusercontent.com/Jarmos-san/jarvim/dev/scripts/Get-Jarvim.ps1").content | Invoke-Expression
+(iwr "https://raw.githubusercontent.com/Jarmos-san/jarvim/dev/scripts/Get-Jarvim.ps1").content | iex 
 ```
 
 **On Linux/MacOS**
