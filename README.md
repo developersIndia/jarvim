@@ -4,9 +4,10 @@
 
 ![Jarvim's cover image](./assets/Jarvim.png)
 
-**DISCLAIMER**: This project is a Work-in-Progress project, so expect to come across
-a few breaking changes. If you come across any breaking changes, feel free to
-open an [Issue thread](https://github.com/Jarmos-san/jarvim/issues/new/choose).
+**DISCLAIMER**: This project is a Work-in-Progress project & isn't ready to be
+used yet! Please wait till the first Minor version is released. And even then
+expect to come across a few breaking changes. If you come across any breaking
+changes, feel free to open an [Issue thread](https://github.com/Jarmos-san/jarvim/issues/new/choose).
 
 ## About the Project
 
@@ -44,6 +45,33 @@ snippet which should download & configure Neovim to work right away!
 ```shell
 curl -Ss https://raw.githubusercontent.com/Jarmos-san/jarvim/dev/scripts/installer.sh | bash
 ```
+
+## TODO & Yet-To-Be Added Features
+
+Following are some of the core features Jarvim will definitely have to become as
+IDE-like as possible. While the list is non-exhaustive & feature requests are
+welcome, arbitrary requests for features which aren't standard willn't be added.
+So, if you feel I missed out some feature which is standard for any IDE out
+there, feel free to open an Issue thread to discuss on it further.
+
+- Native LSP configuration
+- Customize the Statusline & Tabline to be more IDE-like
+- Include plugins like
+  [`surround.nvim`](https://github.com/blackCauldron7/surround.nvim).
+  [`kommentary`](https://github.com/b3nj5m1n/kommentary) which makes it easier
+  to comment blocks/lines of code with keybindings. Or surround them with
+  characters like paranthesises.
+- Add a file explorer.
+- Enable VCS features using Git
+- Cleanup devicon supports for all of the features mentioned above
+- Provide detailed documentations for extending each & every feature mentioned
+  above!
+
+As you can see, Jarvim is supposed to be quite featureful & yet stay open to
+further configurations & extensions. Applying every feature from this list takes
+time & effort, so feel free to contribute to the project if possible.
+
+Any sort of contributions will be greatly appreciated.
 
 ## Credits & Acknowledgement
 
