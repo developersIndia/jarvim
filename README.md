@@ -71,7 +71,9 @@ As you can see, Jarvim is supposed to be quite featureful & yet stay open to
 further configurations & extensions. Applying every feature from this list takes
 time & effort, so feel free to contribute to the project if possible.
 
-Any sort of contributions will be greatly appreciated.
+Any sort of contributions will be greatly appreciated. But before you ahead with
+contributing something, do take a thorough look at the
+[**CONTRIBUTION**](./.github/CONTRIBUTING.md) guidelines.
 
 ## Credits & Acknowledgement
 
