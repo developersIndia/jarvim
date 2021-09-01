@@ -32,7 +32,7 @@ changes to this document as well in a pull request.
 This project and everyone participating in it is governed by the T&Cs mentioned
 in the [CODE OF CONDUCT][Code of Conduct] file. By participating, you are
 expected to uphold this code. Please report unacceptable behaviour to
-[somraj.mle@gmail.com][Personal Email].
+somraj.mle@gmail.com.
 
 ## I don't want to read this whole thing I just have a question
 
@@ -55,7 +55,7 @@ Here's a list of the big ones:
 
 - **Prepare Vim-style documentations for the project**
 - **Implement some of the features listed in the TODO section**
-- ** Optimize the configurations for performance & lazy-loading**
+- **Optimize the configurations for performance & lazy-loading**
 
 _or something else totally!_
 
@@ -158,11 +158,6 @@ involved than `beginner` issues.
 Both issue lists are sorted by the total number of comments. While not perfect,
 the number of comments is a reasonable proxy for an impact a given change will
 have.
-
-#### Local development
-
-Check out the the [Getting Started][Getting Started Section] on the README to 
-setup a local development environment.
 
 ### Pull Requests
 
