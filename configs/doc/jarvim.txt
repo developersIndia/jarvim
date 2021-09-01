@@ -1,0 +1,16 @@
+*jarvim.txt*		    A sensible IDE-like configuration for Neovim
+
+Author:	    Somraj Saha <somraj.mle@gmail.com>
+License:    MIT License
+Credits:    Salomon Popp <https://github.com/disrupted> 
+	    Christian Chiarulli <https://github.com/ChristianChiarullu>
+
+===============================================================================
+CONTENTS                                                        *JarvimContents*
+
+TODO: Complete the Table of Contents eventually! Refer to the resource at:
+https://learnvimscriptthehardway.stevelosh.com/chapters/54.html & the official
+online help page at: https://vimhelp.org/helphelp.txt.html#help-writing for info 
+on how to write documentations for Vim.
+
+vim:tw=78:ts=8:noet:ft=help:norl:
