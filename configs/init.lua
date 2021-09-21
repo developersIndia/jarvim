@@ -11,13 +11,6 @@ cmd [[ highlight Normal guibg=NONE ctermbg=NONE ]]
 -----------------------------------------------------------------------------//
 -- Generic Neovim Configurations {{{1
 -----------------------------------------------------------------------------//
--- Global Configurations related to plugins {{{2
-vim.g.gruvbox_contrast_dark = "hard"    -- Increases the dark contrast of the Gruvbox colorscheme
-vim.g.loaded_python_provider = 0        -- Disables loading Python 2
-vim.g.loaded_ruby_provider = 0          -- Disables loading Ruby
-vim.g.loaded_perl_provider = 0          -- Disables loading Perl
-vim.g.netrw_menu = 0                    -- Disables the Netrw banner & menu. Doesn't appear to work though (it's Netrw anyway)
-
 -- Indentation configs {{{2
 opt.expandtab = true    -- Use Spaces instead of tabs when <Tab> is pressed
 opt.shiftwidth = 4      -- Size of an indent
@@ -42,11 +35,11 @@ opt.lazyredraw = true
 opt.emoji = false
 opt.list = true                 -- Show invisible characters
 opt.listchars = {
-    eol = ' ',
-    tab = '? ',
-    extends = '�',
-    precedes = '�',
-    trail = '�',
+    eol = '↲',
+    tab = '→ ',
+    extends = '…',
+    precedes = '…',
+    trail = '·',
 }
 opt.shortmess:append 'I'    -- Disables the startup screen & info
 opt.iskeyword:prepend { '-' }   -- Treat dash-separated words as a single word textobject
@@ -63,13 +56,13 @@ opt.hidden = true
 opt.splitbelow = true
 opt.splitright = true
 opt.fillchars = {
-    vert = '�',
+    vert = '│',
     fold = ' ',
-    diff = '-', -- alternatives: ?? �
-    msgsep = '?',
-    foldopen = '?',
-    foldsep = '�',
-    foldclose = '?',
+    diff = '-', -- alternatives: ⣿ ░
+    msgsep = '‾',
+    foldopen = '▾',
+    foldsep = '│',
+    foldclose = '▸',
 }
 
 -- Wild & File-globbing patterns {{{2
@@ -206,4 +199,3 @@ Use resources for future references:
 - https://icyphox.sh/blog/nvim-lua/
 - https://rishabhrd.github.io/jekyll/update/2020/09/19/nvim_lsp_config.html
 ]]
-
