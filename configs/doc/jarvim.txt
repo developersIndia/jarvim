@@ -60,62 +60,78 @@ This sections lists all those pre-requisites for Jarvim to work:
 ===============================================================================
 INSTALLATION                                                *jarvim-installation*
 
+*TODO: write & explain the installation procedure
 
 ===============================================================================
 CONFIGURATIONS                                              *jarvim-configurations*
 
+*TODO: Write a brief about the available configurations
 
 -------------------------------------------------------------------------------
 KEY MAPPINGS                                                    *jarvim-keymaps*
 
+*TODO: Explain each & every keymap available & justify their needs
 
 --------------------------------------------------------------------------------
 SETTINGS                                                        *jarvim-settings*
 
+*TODO: Explain each vimoptions, what they do & how they're used in Jarvim
 
 ---------------------------------------------------------------------------------
 AUTO-COMPLETE                                               *jarvim-autocomplete*
 
+*TODO: Explain how Jarvim's autocomplete is configured
 
 ---------------------------------------------------------------------------------
 LANGUAGE SERVER PROTOCOL                                            *jarvim-lsp*
 
+*TODO: Brief about Neovim's native LSP & how it's configured
 
 ---------------------------------------------------------------------------------
 SNIPPET SUPPORT                                                 *jarvim-snippets*
 
+*TODO: Explain how Neovim's native LSP makes use of LuaSnip plugin
 
 ---------------------------------------------------------------------------------
 UTILITY SCRIPTS                                                 *jarvim-utlities*
 
+*TODO: Explain the wrapper functions available in the `lua/conf/utils.lua`
+file
 
 =================================================================================
 AESTHETICS                                                      *jarvim-aesthetics*
 
+*TODO: Brief about Jarvim's aesthetics. And explain what's prospects in this
+regards
 
 ---------------------------------------------------------------------------------
 STATUSLINE                                                      *jarvim-statusline*
 
+*TODO: Brief about Jarvim's statusline & why the plugin `galaxyline.nvim` is
+used
 
 ---------------------------------------------------------------------------------
 COLORSCHEME                                                         *jarvim-colors*
 
+*TODO: Brief about Jarvim's colorscheme & write about other popular
+colorschemes as well
 
 ==================================================================================
 FAQS                                                                *jarvim-faqs*
 
+*TODO: Detail a couple of frequently asked questions & provide comprehensive
+answers
 
 ==================================================================================
 SUPPORT                                                              *support-jarvim*
 
+*TODO: Talk briefly about how to contribute to the project
 
 ===================================================================================
 ACKNOWLEDGEMENTS                                                *jarvim-inspirations*
 
+*TODO: Acknowledge everyone & every other project(s) that inspired Jarvim's
+creation
 
-TODO: Complete the Table of Contents eventually! Refer to the resource at:
-https://learnvimscriptthehardway.stevelosh.com/chapters/54.html & the official
-online help page at: https://vimhelp.org/helphelp.txt.html#help-writing for info 
-on how to write documentations for Vim.
 
 vim:tw=78:ts=8:ft=help:norl:
