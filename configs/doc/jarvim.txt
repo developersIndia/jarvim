@@ -161,8 +161,32 @@ additional community help over at:
 ==================================================================================
 FAQS                                                                *jarvim-faqs*
 
-*TODO: Detail a couple of frequently asked questions & provide comprehensive
-answers
+This section lists some of the most frequently questions asked about Jarvim.
+So, do you've some questions about Jarvim as well? Then before you ask them,
+go through this section & figure out if it has already been answered or not.
+
+1. Is Jarvim yet another fork of Vim (or rather Neovim)?
+-> No, Jarvim isn't a fork of neither Vim nor Neovim. Rather, it's a set of
+commonly used sensible configurations most of the Neovim community uses for
+their development needs.
+
+2. Is Jarvim a clone of VSCode on Neovim?
+-> Not at all! Jarvim's sensible configurations tries to provide the user with
+a set of configurations to download & start experience Vim right away. Since,
+Neovim ships as a very minimal binary, Jarvim tries to bridge that gap between
+a minimal text editor & an IDE like VSCode.
+
+3. Does Jarvim have a LSP configuration builtin?
+-> Yes, Jarvim makes the most out of the latest addition i.e native LSP
+support. You no longer have to download yet another LSP plugin like `coc.nvim`
+anymore. Check out `:h jarvim-lsp`, `:h jarvim-autocomplete` &
+`h: jarvim-snippets` for more info on the same.
+
+4. Is Jarvim customizable & extensible?
+-> Yes, Jarvim was created with extensibility & further user-configurability
+in mind. You're free to build upon what Jarvim already provides. Jarvim is
+meant to work as a foundation for anyone to get started with Vim as quick as
+possible for their IDE needs.
 
 ==================================================================================
 SUPPORT                                                              *support-jarvim*
