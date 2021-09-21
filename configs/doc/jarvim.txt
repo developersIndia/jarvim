@@ -1,47 +1,72 @@
-*jarvim.txt*		    A sensible IDE-like configuration for Neovim
+*jarvim.txt*                         A sensible IDE-like configuration for Neovim
 
 Author:	    Somraj Saha <somraj.mle@gmail.com>
 License:    MIT License
 Credits:    Salomon Popp <https://github.com/disrupted> 
-	    Christian Chiarulli <https://github.com/ChristianChiarullu>
+            Christian Chiarulli <https://github.com/ChristianChiarullu>
 
 ===============================================================================
 CONTENTS                                                        *JarvimContents*
 
-Introduction					    |jarvim-introduction|
-Requirements					    |jarvim-requirements|
-Installation					    |jarvim-installation|
-Configuration					    |jarvim-configurations|
-    Key Mappings				    |jarvim-keymaps|
-    Settings					    |jarvim-settings|
-    Auto-Completion				    |jarvim-autocomplete|
-    LSP-Support					    |jarvim-lsp|
-    Snippet-Support				    |jarvim-snippets|
-    Utility Scripts				    |jarvim-utility|
-Aesthetics					    |jarvim-aesthetics|
-    Statusline					    |jarvim-statusline|
-    Colorscheme					    |jarvim-colorscheme|
-FAQs						    |jarvim-faq|
-Support						    |jarvim-support|
+Introduction                                        |jarvim-introduction|
+Requirements                                        |jarvim-requirements|
+Installation                                        |jarvim-installation|
+Configuration                                       |jarvim-configurations|
+    Key Mappings                                    |jarvim-keymaps|
+    Settings                                        |jarvim-settings|
+    Auto-Completion                                 |jarvim-autocomplete|
+    LSP-Support                                     |jarvim-lsp|
+    Snippet-Support                                 |jarvim-snippets|
+    Utility Scripts                                 |jarvim-utility|
+Aesthetics                                          |jarvim-aesthetics|
+    Statusline                                      |jarvim-statusline|
+    Colorscheme                                     |jarvim-colorscheme|
+FAQs                                                |jarvim-faq|
+Support                                             |jarvim-support|
+Acknowledgements                                    |jarvim-acknowledgements|
 
 ===============================================================================
-INTRODUCTION						*jarvim-introduction*
+INTRODUCTION                                *jarvim-introduction* *jarvim-intro*
+
+Jarvim helps you get started with a minimal IDE-like configuration right
+out-of-the-box without requiring YOU to configure anything initially.
+
+The configurations are powered by useful plugins wherever necessary. And some
+of them are done through default options where possible. What this means is,
+you're free to extend your Vim (or rather Neovim?) experience as cutomized as
+you need it to be.
+
+DO NOTE: Jarvim isn't "fork of Vim (or Neovim at that) but rather it's a set
+of configurations specifically for Neovim, so it won't work with Vim.
+
+That said, Jarvim is a community maintained project, so if you feel there's
+something missing out, feel free to open a PR at
+https://github.com/Jarmos-san/Jarvim.
+
+===============================================================================
+REQUIREMENTS                                *jarvim-requirements* *jarvim-deps*
+
+As noted in the previous section, Jarvim is a Neovim only project, so it won't
+work with Vim. Besides that, there're a couple of more requirements you'll
+need to install and/or make Jarvim (as in the set of configurations)
+flawlessly.
+
+This sections lists all those pre-requisites for Jarvim to work:
+
+1. Git (the Version Control System) to download plugins & update them.
+2. Neovim v0.5+ for some of the features like native LSP to work.
+3. A C/C++ compiler like `gcc` for the `nvim-treesitter` plugin.
+
+===============================================================================
+INSTALLATION                                                *jarvim-installation*
 
 
 ===============================================================================
-REQUIREMENTS						*jarvim-requirements*
-
-
-===============================================================================
-INSTALLATION						*jarvim-installation*
-
-
-===============================================================================
-CONFIGURATIONS						*jarvim-configurations*
+CONFIGURATIONS                                              *jarvim-configurations*
 
 
 -------------------------------------------------------------------------------
-KEY MAPPINGS						*jarvim-keymaps*
+KEY MAPPINGS                                                    *jarvim-keymaps*
 
 
 TODO: Complete the Table of Contents eventually! Refer to the resource at:
@@ -49,4 +74,4 @@ https://learnvimscriptthehardway.stevelosh.com/chapters/54.html & the official
 online help page at: https://vimhelp.org/helphelp.txt.html#help-writing for info 
 on how to write documentations for Vim.
 
-vim:tw=78:ts=8:noet:ft=help:norl:
+vim:tw=78:ts=8:ft=help:norl:
