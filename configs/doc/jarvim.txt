@@ -113,8 +113,50 @@ used
 ---------------------------------------------------------------------------------
 COLORSCHEME                                                         *jarvim-colors*
 
-*TODO: Brief about Jarvim's colorscheme & write about other popular
-colorschemes as well
+Jarvim comes pre-packaged with the Gruvbox colorscheme because of it's
+simplicity & minimalism. Besides, Gruvbox look nice pretty much on any
+environment be it dark or light.
+
+Don't like Gruvbox? Then feel free to change it to anything else you prefer.
+And how would you do that?
+
+First of, you could write your own colorscheme & to do that, be sure to read
+the `h: colorscheme` & `h:syntax` documentations.
+
+You could also use a default plugin which comes preinstalled with Neovim
+itself. To check those colorschemes, checkout the following directories bases
+on the operating system you're using.
+
+On Windows (if installed using Scoop): >
+    %USERPROFILE%\scoop\apps\neovim\current\share\nvim\colors
+<
+On Linux: >
+    /usr/share/nvim/colors
+<
+It's also possible to package Jarvim along with other popular colorschems as
+well like Nord, Monokai & such. So, feel free to open a PR/Issue thread
+requesting such a change.
+
+That said, once you figured out what colorscheme works for you, you got to
+configure Neovim to use it. To do that, open your `init.lua` file & then look
+for a like which looks like this: >
+    cmd [[ colorscheme gruvbox ]]
+<
+
+Change that line of code to say: >
+    cmd [[ colorscheme desert ]]
+<
+
+The source your `init.lua` file by pressing `<Space>s` & see the colorscheme
+change! So, feel free to use whichever colorscheme you prefer other than the
+ones made available through Jarvim!
+
+Find it troublesome to figure out how to change colorschemes? Then do refer to
+the `:h colorscheme` before opening an Issue/Discussion thread. You can find
+additional community help over at:
+
+- Issue Threads: https://github.com/Jarmos-san/jarvim/issues
+- Discussion Threads: https://github.com/Jarmos-san/jarvim/discussions
 
 ==================================================================================
 FAQS                                                                *jarvim-faqs*
