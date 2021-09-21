@@ -69,6 +69,50 @@ CONFIGURATIONS                                              *jarvim-configuratio
 KEY MAPPINGS                                                    *jarvim-keymaps*
 
 
+--------------------------------------------------------------------------------
+SETTINGS                                                        *jarvim-settings*
+
+
+---------------------------------------------------------------------------------
+AUTO-COMPLETE                                               *jarvim-autocomplete*
+
+
+---------------------------------------------------------------------------------
+LANGUAGE SERVER PROTOCOL                                            *jarvim-lsp*
+
+
+---------------------------------------------------------------------------------
+SNIPPET SUPPORT                                                 *jarvim-snippets*
+
+
+---------------------------------------------------------------------------------
+UTILITY SCRIPTS                                                 *jarvim-utlities*
+
+
+=================================================================================
+AESTHETICS                                                      *jarvim-aesthetics*
+
+
+---------------------------------------------------------------------------------
+STATUSLINE                                                      *jarvim-statusline*
+
+
+---------------------------------------------------------------------------------
+COLORSCHEME                                                         *jarvim-colors*
+
+
+==================================================================================
+FAQS                                                                *jarvim-faqs*
+
+
+==================================================================================
+SUPPORT                                                              *support-jarvim*
+
+
+===================================================================================
+ACKNOWLEDGEMENTS                                                *jarvim-inspirations*
+
+
 TODO: Complete the Table of Contents eventually! Refer to the resource at:
 https://learnvimscriptthehardway.stevelosh.com/chapters/54.html & the official
 online help page at: https://vimhelp.org/helphelp.txt.html#help-writing for info 
