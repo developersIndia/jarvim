@@ -214,8 +214,13 @@ to continue working on the project.
 ===================================================================================
 ACKNOWLEDGEMENTS                                                *jarvim-inspirations*
 
-*TODO: Acknowledge everyone & every other project(s) that inspired Jarvim's
-creation
+Jarvim stands on the shoulders of giants. A lot of this project is the result
+of inspirations from other people's Neovim configurations & other similar
+projects. Following are some of the projects that Jarvim took inspirations
+from:
 
+1. https://github.com/disrupted/dotfiles
+2. https://github.com/LunarVim/LunarVim
+3. https://reddit.com/r/Neovim
 
 vim:tw=78:ts=8:ft=help:norl:
