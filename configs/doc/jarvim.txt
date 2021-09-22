@@ -191,7 +191,25 @@ possible for their IDE needs.
 ==================================================================================
 SUPPORT                                                              *support-jarvim*
 
-*TODO: Talk briefly about how to contribute to the project
+Jarvim is an open-source & community maintained project. Which means, the
+maintainers of the project doesn't receive any renumerations from the project.
+So, any helping hands you can provide to the project will ensure it'll
+continue existing for years to come.
+
+That said, here are a couple of ways you can consider supporting the project:
+
+1. Contribute to the project by maintaining it, fixing bugs, responding to
+issues & discussion threads. For more info on the same check out the official
+repository at: https://github.com/Jarmos-san/Jarvim.
+
+2. The other way to support this project is to simply spread the word. If
+Jarvim helped you get started with the Vim experience easily, kindly do share
+it others as well. Let more & more people experience Vim just like any other
+IDEs.
+
+3. And finally, consider dropping a tip if you found Jarvim useful. Be it any
+amount, it helps more than you can imagine & keeps the maintainers motivated
+to continue working on the project.
 
 ===================================================================================
 ACKNOWLEDGEMENTS                                                *jarvim-inspirations*
