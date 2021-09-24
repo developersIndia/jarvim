@@ -106,6 +106,12 @@ packer.startup(function()
         end,
         requires = { 'kyazdani42/nvim-web-devicons', opt = true }
     }
+
+    use { -- Plugin for toggling comments
+        'b3nj5m1n/kommentary',
+        event = { 'BufRead', 'BufNewFile' },
+        config = require('conf.kommentary').config
+    }
 end)
 
 -----------------------------------------------------------------------------//
