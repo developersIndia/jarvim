@@ -11,6 +11,7 @@ CONTENTS                                                        *JarvimContents*
 Introduction                                        |jarvim-introduction|
 Requirements                                        |jarvim-requirements|
 Installation                                        |jarvim-installation|
+Installed Plugins                                   |jarvim-plugins|
 Configuration                                       |jarvim-configurations|
     Key Mappings                                    |jarvim-keymaps|
     Settings                                        |jarvim-settings|
@@ -61,6 +62,24 @@ This sections lists all those pre-requisites for Jarvim to work:
 INSTALLATION                                                *jarvim-installation*
 
 *TODO: write & explain the installation procedure
+
+===============================================================================
+INSTALLED PLUGINS                                               *jarvim-plugins*
+
+Jarvim provides many IDE-like features on Neovim thanks to some very useful
+plugins. This section lists all the plugins used to configure Jarvim. Do note
+though, the list of plugins are kept minimal with a reason. That way, you're
+free to extend & configure them with ease. Also too many plugins could
+potentially slow down Neovim's load times.
+
+That said, following are the list of plugins used & their purpose:
+
+- `wbthompson/packer.nvim` - A highly configurable & fast package manager
+  built on top of Vim `packadd` features.
+- `glepnir/galaxyline.nvim` - Provides a highly customizable & extensible
+  statusline using pure Lua code.
+- `b3nj5m1n/kommentary` - A Lua port of the popular `tpope/commentary.vim`
+  plugin for toggling comments on/off with ease.
 
 ===============================================================================
 CONFIGURATIONS                                              *jarvim-configurations*
