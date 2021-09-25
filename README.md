@@ -11,22 +11,55 @@ changes, feel free to open an [Issue thread](https://github.com/Jarmos-san/jarvi
 
 ## About the Project
 
-The goal of the project is to provide a sensible IDE-like experience on Neovim.
-The project tries to stay as minimal as possible (_subjectively_) & mightn't
-cater to everyone's tastes. If you need a "Vim-experience" right out-of-the-box
-& without the need to spend hours trying configuring getting everything right,
-Jarvim might as well be the right choice for you!
+If you've used Vim even briefly before, you would know, configuring the editor
+to fit your development requirements is a serious undertaking. For some of us,
+customizing our Vim experience is a never-ending process. Is that a productive
+activity? I don't think so.
 
-That said, following are the project goals & what does it try to achieve:
+So, for the busy peeps out there, or even the lazy ones, Jarvim tries to resolve
+a major problem for you. It tries to provide a sensible IDE-like experience at
+the invocation of a single shell command!
 
-1. Require minimal configuration from the end-user's behalf, yet still provide
-   an almost IDE-like behaviour within Neovim.
-2. Be as fast as possible which means all the Neovim plugins have to be
-   lazy-loaded whenever possible.
-3. A "one-click solution" (_or rather one-liner command_) to get everything up &
-   running.
-4. Prioritise community engagement with detailed documentations for further
-   expansion when/if needed at all.
+So, if you're an experienced Vim user or perhaps you've just started dipping
+your feet into Vim recently, then Jarvim a try. Who knows it might help you out
+with not miss your old IDE & might end up liking Vim as well.
+
+## Goals of the Project
+
+If Jarvim piqued your interests by now, you should at least keep in mind what
+the goals of Jarvim are. That said, following are the project goals & what does
+it do to achieve those goals.
+
+- **Provide an IDE-like Behaviour**: Jarvim aims to provide an IDE-like
+  experience right out-of-the-box. You no longer have to spend hours (or even
+  days) gettings things right. So, expect some core IDE-like features to just
+  work.
+- **Customizability**: Jarvim is nothing more than a stepping-stone for Neovim
+  users to get started writing code with Neovim right away. It does impose any
+  hard-coded behaviour. You're free to discard piece of code or add on top of it
+  as you deem fit.
+- **Extensibility**: Jarvim tries not to impose its opinion as much as possible.
+  You, as the user, have the ultimate right to configure your Neovim experience
+  as you like after using Jarvim.
+- **Documentation**: Customizing & extending default behaviour isn't possible (or
+  at least quite difficult) without having proper documentation in place. Hence,
+  expect jarvim's source code to be heavily commented & documented where
+  possible.
+- **Minimalist Experience**: Subjectively speaking, Jarvim mightn't be minimal
+  enough for some & that's fine. Jarvim adheres to provide a very minimal
+  IDE-like experience within Neovim while still keeping in mind the above goals.
+
+So, as you can Jarvim's goals mightn't cater to everyone. But if you're planning
+to start using Neovim, Jarvim might just be the right place to start it with!
+
+## Prerequisites & Good-t0-Know Info
+
+While Jarvim aims to provide an IDE-like experience within Neovim at the
+invocation of a shell command, it still requires some prerequisite dependencies
+to work properly. Hence, this section lists all the caveats you need to be aware
+of before using Jarvim.
+
+TODO: List all the caveats & dependencies of the project.
 
 ## Installation Procedures
 
