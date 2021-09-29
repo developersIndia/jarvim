@@ -32,10 +32,12 @@ INTRODUCTION                                *jarvim-introduction* *jarvim-intro*
 Jarvim helps you get started with a minimal IDE-like configuration right
 out-of-the-box without requiring YOU to configure anything initially.
 
-The configurations are powered by useful plugins wherever necessary. And some
-of them are done through default options where possible. What this means is,
-you're free to extend your Vim (or rather Neovim?) experience as cutomized as
-you need it to be.
+The configurations are powered by useful plugins wherever necessary. While
+some other features are configured through default options where possible.
+Jarvim is unopinionated, programming language agnostic & doesn't assume about
+any user-specific requirements. It's mainly focused on providing core IDE-like
+experience on Neovim. What this means is you're free to extend your Vim (or
+rather Neovim?) experience as cutomized as you need it to be.
 
 DO NOTE: Jarvim isn't "fork of Vim (or Neovim at that) but rather it's a set
 of configurations specifically for Neovim, so it won't work with Vim.
@@ -43,6 +45,22 @@ of configurations specifically for Neovim, so it won't work with Vim.
 That said, Jarvim is a community maintained project, so if you feel there's
 something missing out, feel free to open a PR at
 https://github.com/Jarmos-san/Jarvim.
+
+The goals of the project are:
+
+1. To provide the user with a minimal IDE-like experience within Vim which
+should work right out-of-the-box.
+
+2. Keep the doors of further customizability open for the user(s) which means
+you should be able to either remove/extend current features of Jarvim with
+absolute ease.
+
+3. Provide extensive documentation for those interested in customizing their
+experience even further.
+
+4. Provide community standard practices to make it easier to get started with.
+
+TODO: Add link to wiki when it's prepared.
 
 ===============================================================================
 REQUIREMENTS                                *jarvim-requirements* *jarvim-deps*
@@ -80,6 +98,13 @@ That said, following are the list of plugins used & their purpose:
   statusline using pure Lua code.
 - `b3nj5m1n/kommentary` - A Lua port of the popular `tpope/commentary.vim`
   plugin for toggling comments on/off with ease.
+- `lukas-reineke/indent-blankline.nvim` - A plugin to visualize indents &
+  whitespace lines clearly.
+- `neovim/nvim-lspconfig` - TODO: Needs to be implemented
+- `L3MON4D3/LuaSnip` - TODO: Needs to be implemented
+- `nvim-telescope/telescope.nvim` - A versatile plugin for fuzzy finders, file
+  management & much more!
+- `nvim-treesitter/nvim-treesitter` NOTE: Couldn't make it work on Windows
 
 ===============================================================================
 CONFIGURATIONS                                              *jarvim-configurations*
