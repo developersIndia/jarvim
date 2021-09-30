@@ -70,13 +70,13 @@ snippet which should download & configure Neovim to work right away!
 **On Windows PowerShell**
 
 ```powershell
-(iwr "https://git.io/JgTXv").content | iex 
+(iwr "https://git.io/JgTXE").content | iex 
 ```
 
 **On Linux/MacOS**
 
 ```shell
-curl -Ss https://git.io/JgT65 | bash
+curl -Ss https://git.io/JgTXK | bash
 ```
 
 ## TODO & Yet-To-Be Added Features
