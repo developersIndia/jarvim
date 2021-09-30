@@ -70,13 +70,13 @@ snippet which should download & configure Neovim to work right away!
 **On Windows PowerShell**
 
 ```powershell
-(iwr "https://raw.githubusercontent.com/Jarmos-san/jarvim/dev/scripts/Get-Jarvim.ps1").content | iex 
+(iwr "https://git.io/JgTXv").content | iex 
 ```
 
 **On Linux/MacOS**
 
 ```shell
-curl -Ss https://raw.githubusercontent.com/Jarmos-san/jarvim/dev/scripts/installer.sh | bash
+curl -Ss https://git.io/JgT65 | bash
 ```
 
 ## TODO & Yet-To-Be Added Features
