@@ -52,7 +52,7 @@ it do to achieve those goals.
 So, as you can Jarvim's goals mightn't cater to everyone. But if you're planning
 to start using Neovim, Jarvim might just be the right place to start it with!
 
-## Prerequisites & Good-t0-Know Info
+## Prerequisites & Good-to-Know Info
 
 While Jarvim aims to provide an IDE-like experience within Neovim at the
 invocation of a shell command, it still requires some prerequisite dependencies
@@ -134,6 +134,8 @@ You can support this project by:
 2. Help maintain the project when necessary.
 3. And/or send out a [Token of
    Appreciation](https://www.buymeacoffee.com/jarmos) with some :heart:
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/H2H567ZQH)
 
 ## License & Usage Terms & Conditions
 
