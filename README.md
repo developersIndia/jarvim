@@ -12,23 +12,25 @@ changes, feel free to open an [Issue thread](https://github.com/Jarmos-san/jarvi
 ## About the Project
 
 If you've used Vim even briefly before, you would know, configuring the editor
-to fit your development requirements is a serious undertaking. For some of us,
-customizing our Vim experience is a never-ending process. Is that a productive
-activity? I don't think so.
+to fit your development requirements is a time-consuming undertaking. For some
+of us, customizing our Vim experience is a never-ending process. Is that a 
+productive activity? I don't think so.
 
-So, for the busy peeps out there, or even the lazy ones, Jarvim tries to resolve
-a major problem for you. It tries to provide a sensible IDE-like experience at
-the invocation of a single shell command!
+For the busy peeps out there, or even the lazy ones, Jarvim tries to resolve
+a major problem for you. It tries to provide a sensible IDE-like experience with
+an invocation of a single shell command!
 
 So, if you're an experienced Vim user or perhaps you've just started dipping
-your feet into Vim recently, then Jarvim a try. Who knows it might help you out
-with not miss your old IDE & might end up liking Vim as well.
+your feet into Vim recently, then give Jarvim a try. Who knows it might 
+help you out with not miss your old IDE & might end up liking Vim as well.
 
 ## Goals of the Project
 
-If Jarvim piqued your interests by now, you should at least keep in mind what
-the goals of Jarvim are. That said, following are the project goals & what does
-it do to achieve those goals.
+Lots other similar projects already exist if you're aware of the Vim community.
+Some such projects include; [LunarVim](https://github.com/LunarVim/LunarVim),
+[NvChad](https://github.com/NvChad/NvChad) & so on. So, Jarvim has to deliver
+something differnt the other mature projects doesn't. As such, the project has
+stric adherances to the following goals.
 
 - **Provide an IDE-like Behaviour**: Jarvim aims to provide an IDE-like
   experience right out-of-the-box. You no longer have to spend hours (or even
@@ -49,23 +51,28 @@ it do to achieve those goals.
   enough for some & that's fine. Jarvim adheres to provide a very minimal
   IDE-like experience within Neovim while still keeping in mind the above goals.
 
-So, as you can Jarvim's goals mightn't cater to everyone. But if you're planning
-to start using Neovim, Jarvim might just be the right place to start it with!
+Need a more detailed justification behind the Jarvim's goals? Then do take a
+look at the ["Goals of
+Jarvim"](https://github.com/Jarmos-san/jarvim/wiki/Introducing-Jarvim!#goals-of-jarvim)
+section of the Jarvim wiki for more info.
 
 ## Prerequisites & Good-to-Know Info
 
-While Jarvim aims to provide an IDE-like experience within Neovim at the
-invocation of a shell command, it still requires some prerequisite dependencies
-to work properly. Hence, this section lists all the caveats you need to be aware
-of before using Jarvim.
+For Jarvim to provide an IDE-like experience it requires some prerequisite 
+dependencies to work properly. Hence, here's a brief list of all the caveats 
+you need to be aware of before using Jarvim.
 
 TODO: List all the caveats & dependencies of the project.
 
+For more info on the same refer to the ["Prerequisits to Make Jarvim Work
+Properly"](https://github.com/Jarmos-san/jarvim/wiki/Installation-Procedures#jarvim-prerequisites)
+section of the article.
+
 ## Installation Procedures
 
-One of the primary goals of this project is to provide the end-user utilities to
-get started with Neovim as quick as possible. Hence, we wrote an one-line code
-snippet which should download & configure Neovim to work right away!
+Jarvim is super easy to install, you only got to invoke a single line of Shell
+command to download & setup the configurations! So, here's how you can get them
+based on the platform of your choice.
 
 **On Windows PowerShell**
 
@@ -79,54 +86,58 @@ snippet which should download & configure Neovim to work right away!
 curl -Ss https://git.io/JgTXK | bash
 ```
 
+**NOTE**: It's strongly recommended to never run arbitrary Shell commands on
+your machine. So, do take a look at the [scripts](https://github.com/Jarmos-san/jarvim/tree/dev/scripts)
+to understand what they do under the hood. But for a TLDR of what the scripts
+do, refer to the ["Getting
+  Jarvim"](https://github.com/Jarmos-san/jarvim/wiki/Installation-Procedures)
+  section of the wiki.
+
 ## TODO & Yet-To-Be Added Features
 
-Following are some of the core features Jarvim will definitely have to become as
-IDE-like as possible. While the list is non-exhaustive & feature requests are
-welcome, arbitrary requests for features which aren't standard willn't be added.
-So, if you feel I missed out some feature which is standard for any IDE out
-there, feel free to open an Issue thread to discuss on it further.
+Jarvim offers the user to setup a variety of modern IDE-like features to Neovim
+without the pain of spending days or even weeks trying to configuring things.
+So, to get a gist of all the features Jarvim will provide you are listed below;
 
-- Native LSP configuration
-- Customize the Statusline & Tabline to be more IDE-like
-- Include plugins like
-  [`surround.nvim`](https://github.com/blackCauldron7/surround.nvim).
-  [`kommentary`](https://github.com/b3nj5m1n/kommentary) which makes it easier
-  to comment blocks/lines of code with keybindings. Or surround them with
-  characters like paranthesises.
-- Add a file explorer.
-- Enable VCS features using Git
-- Cleanup devicon supports for all of the features mentioned above
-- Provide detailed documentations for extending each & every feature mentioned
-  above!
+- Native Language-Server Protocol (LSP) support
+- Custom Statusline & Tabline to provide useful info the way IDEs does
+- Add file explorer support
+- Enable version-control features
 
-As you can see, Jarvim is supposed to be quite featureful & yet stay open to
-further configurations & extensions. Applying every feature from this list takes
-time & effort, so feel free to contribute to the project if possible.
+...and those were only a few to name. Do you feel there's a very useful IDE-like
+feature missing out? Then open an Issue/Discussion thread for the community to
+discuss about it. And then send over a PR with your additions.
 
-Any sort of contributions will be greatly appreciated. But before you ahead with
-contributing something, do take a thorough look at the
+**NOTE**: Jarvim is ever evolving & is probably subject to the needs of the
+community. So, to get a detailed idea of what all features are included with
+Jarvim, refer to the ["Available
+Features"](https://github.com/Jarmos-san/jarvim/wiki/Introducing-Jarvim!#available-features)
+section of the wikia.
+
+That said, any sort of contributions will be greatly appreciated. But before
+you proceed ahead with contributing something, do take a thorough look at the
 [**CONTRIBUTION**](./.github/CONTRIBUTING.md) guidelines.
 
 ## Credits & Acknowledgement
 
-This project came to fuition due to inspiration from the following projects &
-their respective maintainers:
+Jarvim stands on the shoulders of the giants within the Neovim community.
+Without their work & inspiration, Jarvim would've never seen the light of the
+day. So, if you found Jarvim helpful, do take some time out & check out those
+projects as well.
 
 - [LunarVim](https://github.com/LunarVim/LunarVim) maintained by [Christian
   Chiarulli](https://github.com/ChristianChiarulli)
 - [disrupted/dotfiles](https://github.com/disrupted/dotfiles/tree/master/.config/nvim)
   maintained by [Salomon Popp](https://github.com/disrupted)
-
-If you find Jarvim helpful, do note, it exists only on the shoulders of the
-giants & because of their contributions. Do check out their projects &
-considering supporting them through whatever means possible for you.
+- [NvChad/NvChad](https://github.com/NvChad/NvChad) maintained by
+  ["Siduck"](https://github.com/siduck76)
 
 ## Consider Supporting Jarvim
 
-Jarvim is supposed to be a community-maintained project without which it's
-nothing more than "just any other __personal__ Neovim configuration". Hence you
-support in whatever means will be quite helpful towards maintaining the project.
+Jarvim is a community-maintained project. Without the community effort the
+project would have been nothing more than "just any other __personal__ Neovim
+configuration". Hence your support in whatever means will be quite helpful 
+towards maintaining the project.
 
 You can support this project by:
 
@@ -134,6 +145,9 @@ You can support this project by:
 2. Help maintain the project when necessary.
 3. And/or send out a [Token of
    Appreciation](https://www.buymeacoffee.com/jarmos) with some :heart:
+
+**NOTE**: Do refer to the [**CONTRIBUTING**](./.github/CONTRIBUTING.md)
+guidelines before proceeding ahead with a PR.
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/H2H567ZQH)
 
