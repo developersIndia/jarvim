@@ -60,7 +60,11 @@ experience even further.
 
 4. Provide community standard practices to make it easier to get started with.
 
-TODO: Add link to wiki when it's prepared.
+For more detailed info check out the official wiki available at:
+https://github.com/Jarmos-san/jarvim/wiki
+
+ The wikia is community-maintained as well so if you feel there's missing info
+ somewhere, feel free to make the necessary changes to it. <3 :)
 
 ===============================================================================
 REQUIREMENTS                                *jarvim-requirements* *jarvim-deps*
@@ -76,10 +80,46 @@ This sections lists all those pre-requisites for Jarvim to work:
 2. Neovim v0.5+ for some of the features like native LSP to work.
 3. A C/C++ compiler like `gcc` for the `nvim-treesitter` plugin.
 
+NOTE: While Neovim is built with cross-platform support in mind, not all of
+it's plugin were developed with that in mind though. It's a sad reality but
+there's nothing we can do about it. Which is why it's STRONGLY RECOMMENDED
+that you use Jarvim (or Neovim) in a Linux environment.
+
+Good news from all Windows users out there, you can rely on a WSL environment
+without facing any issues. Making some of the plugins work flawlessly on
+Windows natively is a very painful experience. So, you best bet to make things
+just work is Linux. So, if possible please use WSL, you can find info on how
+to set it up at: https://docs.microsoft.com/en-us/windows/wsl/install
+
+You can find detailed info on this issue in the wikia:
+
+TODO: Write the issues with Neovim on Windows of the wikia before linking it
+here in the docs.
+
 ===============================================================================
 INSTALLATION                                                *jarvim-installation*
 
-*TODO: write & explain the installation procedure
+Before installing Jarvim, make sure you followed the notes detailed above. So,
+ensure you've `git`, `gcc` (or any other compiler) & `nvim` installed &
+available at `$PATH`.
+
+So, if those steps are taken care off of, run the following commands based on
+the platform you're using:
+
+For Windows:
+> 
+    (iwr "https://git.io/JgTXE").content | iex 
+<
+
+For Linux/MacOS:
+
+> 
+    curl -Ss https://git.io/JgTXK | bash
+<
+
+For more info on installing Jarvim, take a look at the wiki:
+
+TODO: Write the installation section of the wikia before linking it here.
 
 ===============================================================================
 INSTALLED PLUGINS                                               *jarvim-plugins*
@@ -104,7 +144,9 @@ That said, following are the list of plugins used & their purpose:
 - `L3MON4D3/LuaSnip` - TODO: Needs to be implemented
 - `nvim-telescope/telescope.nvim` - A versatile plugin for fuzzy finders, file
   management & much more!
-- `nvim-treesitter/nvim-treesitter` NOTE: Couldn't make it work on Windows
+- `nvim-treesitter/nvim-treesitter` for better syntax highlighting & other
+  integration with plugins like visualizing indentlines
+- `kyazdani42/nvim-web-devicons` for showcasing icons
 
 ===============================================================================
 CONFIGURATIONS                                              *jarvim-configurations*
@@ -139,14 +181,61 @@ SNIPPET SUPPORT                                                 *jarvim-snippets
 ---------------------------------------------------------------------------------
 UTILITY SCRIPTS                                                 *jarvim-utlities*
 
-*TODO: Explain the wrapper functions available in the `lua/conf/utils.lua`
-file
+Neovim v0.5+ provides first-class support for a builtin Lua runtime which
+means its possible to ditch VimScript in favor of Lua for all configuration
+needs. Hence, a lot of people out there have built some pretty nifty utlity
+wrappers to use with their Neovim environment. Jarvim has compiled some of the
+best such utilitarian scripts for you.
+
+So, you can simply import them & use them wherever necessary. Here's a list of
+the current utlity wrappers & functions;
+
+1. `create_autogroup()` is a wrapper for easily creating Autocommand groups!
+This wrapper will either be removed/depecrated once Neovim has official
+support for creating Autocommands. To track it's development, check out
+https://github.com/neovim/neovim/pull/14661
+
+2. `map()` is a wrapper for creating keymaps.
+
+3. `is_buffer_empty()` is a wrapper to check if the current buffer is empty.
+
+4. `has_width_gt()` is a wrapper to check if the window width is greater than
+a given number of columns.
+
+TODO: Write detailed explanation of what each utility scripts does.
+
+Ofcourse these are only a few utlity wrappers to be used while configuring
+Neovim, if you feel you might've a wrapper or two to share with the community
+then feel free to open an Issue/Discussion thread. We'll then help you draft a
+PR then.
 
 =================================================================================
 AESTHETICS                                                      *jarvim-aesthetics*
 
-*TODO: Brief about Jarvim's aesthetics. And explain what's prospects in this
-regards
+Not everyone has similar tastes which is why Jarvim doesn't include any
+colorschemes other than the uber-popular `gruvbox` colorscheme. Besides
+`gruvbox` the default colorschemes packaged with Neovim itself hasn't been
+tinkered with. So, feel free to check them out if you're inclined to do so!
+
+That said, do you want other popular colorschemes to be made available through
+Jarvim? Then feel free open an Issue/Discussion thread & we can help you draft
+a PR to add your fav colorscheme to the project.
+
+Here's a short list of prospective colorschemes that could be added to Jarvim;
+
+- Nord: https://github.com/arcticicestudio/nord-vim
+- Solarized: https://github.com/altercation/vim-colors-solarized
+- Material: https://github.com/kaicataldo/material.vim
+- Monokai: https://github.com/sickill/vim-monokai
+
+...and many more! The list is pretty much endless which is why we plan to
+provide only the most popular colorschemes among the community.
+
+To customize your Neovim experience even further and/or to make another
+popular colorscheme available through Jarvim check out the wikia:
+
+TODO: Add link to "Customize Jarvim" section of the wikia after it contains a
+subsection about colorscheme
 
 ---------------------------------------------------------------------------------
 STATUSLINE                                                      *jarvim-statusline*
