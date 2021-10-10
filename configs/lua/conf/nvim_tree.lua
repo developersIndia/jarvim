@@ -1,6 +1,16 @@
--- Configurations for "kyazdani42/nvim-tree.lua" plugin
--- For more info on configuring the File Explorer to fit your
--- needs check out `h: nvim-tree.lua`
+--[[
+Configurations for "kyazdani42/nvim-tree.lua" plugin
+
+For more info on configuring the File Explorer to fit your
+needs check out `h: nvim-tree.lua`
+
+Know bugs for this plugin
+1. Any of the "vim.g.nvim_tree..." variables might break because of an ongoing refactoring project. 
+   Refer to https://github.com/kyazdani42/nvim-tree.lua/issues/674 if something broke after an update.
+
+2. Icons dont show up when the "nvim-web-devicons" plugin is lazy-loaded. It might be fixed some day so
+   refer to https://github.com/kyazdani42/nvim-tree.lua/issues/694 to track it.
+--]]
 
 local M = {}
 
@@ -70,7 +80,7 @@ end
 
 function M.setup()
     local map = require('utils').map
-
+    -- Add your preferred custom key bindings here
     map('n', '<C-b>', '<CMD>NvimTreeToggle<CR>')
 end
 
