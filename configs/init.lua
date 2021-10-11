@@ -126,16 +126,16 @@ packer.startup(function()
                 'nvim-treesitter/nvim-treesitter-textobjects',
                 after = 'nvim-treesitter'
             },
-            {
-                'lewis6991/spellsitter.nvim',
-                after = 'nvim-treesitter',
-                config = function()
-                    require('spellsitter').setup {
-                        hl = 'SpellBad',
-                        captures = {},
-                    }
-                end
-            },
+            -- {
+            --     'lewis6991/spellsitter.nvim',
+            --     after = 'nvim-treesitter',
+            --     config = function()
+            --         require('spellsitter').setup {
+            --             hl = 'SpellBad',
+            --             captures = {},
+            --         }
+            --     end
+            -- },
         },
         run = ':TSUpdate',
     }
