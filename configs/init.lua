@@ -112,6 +112,33 @@ packer.startup(function()
         event = { 'BufRead', 'BufNewFile' },
         config = require('conf.kommentary').config
     }
+
+    use { -- Plugin for better syntax highlighting & much more
+        'nvim-treesitter/nvim-treesitter',
+        event = { 'BufRead', 'BufNewFile' },
+        config = require(conf.treesitter).config,
+        requires = {
+            {
+                'nvim-treesitter/nvim-treesitter-refactor',
+                after = 'nvim-treesitter'
+            },
+            {
+                'nvim-treesitter/nvim-treesitter-textobjects',
+                after = 'nvim-treesitter'
+            },
+            {
+                'lewis6991/spellsitter.nvim',
+                after = 'nvim-treesitter',
+                config = function()
+                    require('spellsitter').setup {
+                        hl = 'SpellBad',
+                        captures = {},
+                    }
+                end
+            },
+        },
+        run = ':TSUpdate',
+    }
 end)
 
 -----------------------------------------------------------------------------//
