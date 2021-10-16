@@ -149,6 +149,11 @@ That said, following are the list of plugins used & their purpose:
 - `kyazdani42/nvim-web-devicons` for showcasing icons
 
 ===============================================================================
+DIRECTORY STRUCTURE                                 *jarvim-directory-structure*
+
+TODO: Explain Jarvim's directory structure
+
+===============================================================================
 CONFIGURATIONS                                              *jarvim-configurations*
 
 *TODO: Write a brief about the available configurations
