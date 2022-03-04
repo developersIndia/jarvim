@@ -11,4 +11,6 @@ contact_links:
 
   - name: Security Policy
     url: https://github.com/Jarmos-san/jarvim/security/policy
-    about: Refer to the Security Policy to report security vulnerabilities or if you would like to know about how your personal information is used.
+    about:
+      Refer to the Security Policy to report security vulnerabilities or if you
+      would like to know about how your personal information is used.
