@@ -22,4 +22,3 @@ jobs:
         uses: luizm/action-sh-checker@v0.3.0
         env:
           SHFMT_OPTS: -d -i 2 -ci -bn scripts
-
