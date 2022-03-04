@@ -21,4 +21,4 @@ jobs:
       - name: Run shfmt for shell scripts check
         uses: luizm/action-sh-checker@v0.3.0
         env:
-          SHFMT_OPTS: -l -i 2 -ci -bn -w scripts/**/*
+          SHFMT_OPTS: -l -i 2 -ci -bn -w scripts/install.sh
