@@ -18,7 +18,7 @@ jobs:
         with:
           args: . --check
 
-      - name: sh-checker
+      - name: Run shfmt for shell scripts check
         uses: luizm/action-sh-checker@v0.3.0
         env:
-          SHFMT_OPTS: -d -i 2 -ci -bn scripts
+          SHFMT_OPTS: -l -w -i 2 -ci -bn scripts/install.sh
