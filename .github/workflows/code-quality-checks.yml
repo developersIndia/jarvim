@@ -17,4 +17,4 @@ jobs:
       name: Run Prettier on Markdown files
       uses: actionsx/prettier@v2
       with:
-        args: README.md --prose-wrap always --check
+        args: **/*.md --prose-wrap always --check --ignore-path .github/workflows/*
