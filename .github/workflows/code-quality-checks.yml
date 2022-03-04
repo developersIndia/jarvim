@@ -13,7 +13,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Run Prettier on Markdown files
+      - name: Run Prettier
         uses: actionsx/prettier@v2
         with:
           args: . --check
+
+      - name: sh-checker
+        uses: luizm/action-sh-checker@v0.3.0
+        env:
+          SHFMT_OPTS: -d -i 2 -ci -bn scripts
+
