@@ -7,7 +7,6 @@ on:
 
 jobs:
   runCodeQualityChecks:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -17,4 +16,4 @@ jobs:
       - name: Run Prettier on Markdown files
         uses: actionsx/prettier@v2
         with:
-          args: **/*.md --prose-wrap always --check
+          args: . --check
