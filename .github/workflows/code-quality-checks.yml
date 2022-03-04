@@ -11,10 +11,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      name: Checkout repository
-      uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-      name: Run Prettier on Markdown files
-      uses: actionsx/prettier@v2
-      with:
-        args: **/*.md --prose-wrap always --check
+      - name: Run Prettier on Markdown files
+        uses: actionsx/prettier@v2
+        with:
+          args: **/*.md --prose-wrap always --check
