@@ -81,7 +81,7 @@ based on the platform of your choice.
 [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl)
 
 ```shell
-curl -fsSL https://raw.githubusercontent.com/Jarmos-san/jarvim/main/scripts/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/Jarmos-san/jarvim/main/install.sh | bash
 ```
 
 **Disclaimer**: Its never recommended to run arbitrary shell scripts for obvious
