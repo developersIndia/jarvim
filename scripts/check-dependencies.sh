@@ -16,8 +16,8 @@ DEPENDENCIES=("curl" "tar" "gcc" "git")
 
 echo -e "Performing dependency checks!\n"
 
-for DEPENDENTS in ${DEPENDENCIES[@]}; do
-  curl --silent --location "https://git.io/_has" | bash -s $DEPENDENTS
+for DEPENDENTS in "${DEPENDENCIES[@]}"; do
+  curl --silent --location "https://git.io/_has" | bash -s "$DEPENDENTS"
 done
 
 echo -e "\nDependency checks complete! If a dependecy is missing from your system please install it before downloading Jarvim."

@@ -30,7 +30,7 @@ DOWNLOAD_DIR=$(mktemp --directory)
 #   None
 ################################################################################
 function cleanup() {
-  rm --recursive --force $DOWNLOAD_DIR
+  rm --recursive --force "$DOWNLOAD_DIR"
   echo "Cleaning up unwanted downloaded stuff!"
 }
 
@@ -38,7 +38,7 @@ function cleanup() {
 trap cleanup EXIT
 
 # Download the gzipped file to the temp directory mentioned above
-curl --silent --output "$DOWNLOAD_DIR/jarvim.tar.gz" $DOWNLOAD_URL
+curl --silent --output "$DOWNLOAD_DIR/jarvim.tar.gz" "$DOWNLOAD_URL"
 echo "Downloaded Jarvim to $DOWNLOAD_DIR"
 
 # TODO: Backup the existing Neovim configurations (if they exists)
