@@ -22,13 +22,11 @@ DOWNLOAD_URL=$(curl --fail --silent --show-error --location $URL_ENDPOINT \
 # Temporary directory to download the gzipped file into
 DOWNLOAD_DIR=$(mktemp --directory)
 
-# TODO: Write a function to perform cleanup tasks
 function cleanup {
   rm --recursive --force $DOWNLOAD_DIR
   echo "Cleaning up unwanted downloaded stuff!"
 }
 
-# TODO: Register the cleanup function to be called on the EXIT signal
 #* Ref: https://stackoverflow.com/a/34676160/8604951
 trap cleanup EXIT
 
