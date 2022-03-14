@@ -29,7 +29,7 @@ DOWNLOAD_DIR=$(mktemp --directory)
 # Arguments:
 #   None
 ################################################################################
-function cleanup {
+function cleanup() {
   rm --recursive --force $DOWNLOAD_DIR
   echo "Cleaning up unwanted downloaded stuff!"
 }
