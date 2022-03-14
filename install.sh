@@ -22,6 +22,13 @@ DOWNLOAD_URL=$(curl --fail --silent --show-error --location $URL_ENDPOINT \
 # Temporary directory to download the gzipped file into
 DOWNLOAD_DIR=$(mktemp --directory)
 
+################################################################################
+# Clean up files & folders which aren't needed for Neovim to work properly
+# Globals:
+#   None
+# Arguments:
+#   None
+################################################################################
 function cleanup {
   rm --recursive --force $DOWNLOAD_DIR
   echo "Cleaning up unwanted downloaded stuff!"
