@@ -9,11 +9,15 @@
 # Author:  Somraj Saha
 ###############################################################################
 
-# TODO: Run "has" command to check for availability of dependencies
-#* Ref: https://github.com/kdabir/has
+# TODO: Check for neovim as well once the following issue has been fixed
+#* https://github.com/kdabir/has/issues/64
 
-#! The following needs to exists for the project to work well
-#     - curl
-#     - tar
-#     - neovim
-#     - git
+DEPENDENCIES=("curl" "tar" "gcc" "git")
+
+echo -e "Performing dependency checks!\n"
+
+for DEPENDENTS in ${DEPENDENCIES[@]}; do
+  curl --silent --location "https://git.io/_has" | bash -s $DEPENDENTS
+done
+
+echo -e "\nDependency checks complete! If a dependecy is missing from your system please install it before downloading Jarvim."
