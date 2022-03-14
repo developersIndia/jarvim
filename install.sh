@@ -19,5 +19,11 @@ DOWNLOAD_URL=$(curl --fail --silent --show-error --location $URL_ENDPOINT \
     | grep "browser_download_url" \
     | cut -d '"' -f 4)
 
-# echo $DOWNLOAD_URL
+# TODO: Create a temp directory to download the gzipped file
+
+# TODO: Refactor the following command to download the asset to the aforementioned temporary directory
 curl --fail --silent --location --remote-name $DOWNLOAD_URL
+
+# TODO: Write a function to perform cleanup tasks
+
+# TODO: Register the cleanup function to be called on the EXIT signal
