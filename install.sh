@@ -25,6 +25,8 @@ DOWNLOAD_DIR=$(mktemp --directory)
 # Download the gzipped file to the temp directory mentioned above
 curl --output "$DOWNLOAD_DIR/jarvim.tar.gz" $DOWNLOAD_URL
 
+# TODO: Extract the contents of the downloaded gzipped file
+
 # TODO: Write a function to perform cleanup tasks
 
 # TODO: Register the cleanup function to be called on the EXIT signal
