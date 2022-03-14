@@ -24,6 +24,7 @@ DOWNLOAD_DIR=$(mktemp --directory)
 
 # TODO: Write a function to perform cleanup tasks
 function cleanup {
+  rm --recursive --force $DOWNLOAD_DIR
   echo "Cleaning up unwanted downloaded stuff!"
 }
 
