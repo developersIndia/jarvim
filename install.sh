@@ -27,3 +27,5 @@ curl --fail --silent --location --remote-name $DOWNLOAD_URL
 # TODO: Write a function to perform cleanup tasks
 
 # TODO: Register the cleanup function to be called on the EXIT signal
+#* Ref: https://stackoverflow.com/a/34676160/8604951
+trap cleanup EXIT
