@@ -19,10 +19,11 @@ DOWNLOAD_URL=$(curl --fail --silent --show-error --location $URL_ENDPOINT \
     | grep "browser_download_url" \
     | cut -d '"' -f 4)
 
-# TODO: Create a temp directory to download the gzipped file
+# Temporary directory to download the gzipped file into
+DOWNLOAD_DIR=$(mktemp --directory)
 
-# TODO: Refactor the following command to download the asset to the aforementioned temporary directory
-curl --fail --silent --location --remote-name $DOWNLOAD_URL
+# Download the gzipped file to the temp directory mentioned above
+curl --output "$DOWNLOAD_DIR/jarvim.tar.gz" $DOWNLOAD_URL
 
 # TODO: Write a function to perform cleanup tasks
 
