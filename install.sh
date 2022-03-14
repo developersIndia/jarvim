@@ -23,7 +23,7 @@ DOWNLOAD_URL=$(curl --fail --silent --show-error --location $URL_ENDPOINT \
 DOWNLOAD_DIR=$(mktemp --directory)
 
 # Download the gzipped file to the temp directory mentioned above
-curl --output "$DOWNLOAD_DIR/jarvim.tar.gz" $DOWNLOAD_URL
+curl --silent --output "$DOWNLOAD_DIR/jarvim.tar.gz" $DOWNLOAD_URL
 
 # TODO: Extract the contents of the downloaded gzipped file
 
