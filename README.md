@@ -5,36 +5,48 @@
 [![GitHub](https://img.shields.io/github/license/Jarmos-san/Jarvim?label=License&logo=GitHub&style=flat-square)](./LICENSE)
 ![Twitter Follow](https://img.shields.io/twitter/follow/Jarmosan?style=social)
 
-![Jarvim's cover image](./assets/Jarvim.png)
-
-**DISCLAIMER**: This project is a Work-in-Progress project & isn't ready to be
-used yet! Please wait till the first Minor version is released. And even then
-expect to come across a few breaking changes. If you come across any breaking
-changes, feel free to open an
-[Issue thread](https://github.com/Jarmos-san/jarvim/issues/new/choose).
-
 ## About the Project
 
-If you've used Vim even briefly before, you would know, configuring the editor
-to fit your development requirements is a time-consuming undertaking. For some
-of us, customizing our Vim experience is a never-ending process. Is that a
-productive activity? I don't think so.
+If you've used Vim even briefly before, you would know configuring the editor to
+fit your specific development needs is a time-consuming undertaking. But
+fortunately, there are quite a lot of "_Neovim configuration frameworks_" out
+there & Jarvim is one of them as wekk!
 
-For the busy peeps out there, or even the lazy ones, Jarvim tries to resolve a
-major problem for you. It tries to provide a sensible IDE-like experience with
-an invocation of a single shell command!
+But unlike the other alternatives out there, Jarvim attempts to stay out of the
+way of the developer as much as possible. It'll only provide you with a "_bare
+minimum_" set of configurations to give you an IDE-like experience.
 
-So, if you're an experienced Vim user or perhaps you've just started dipping
-your feet into Vim recently, then give Jarvim a try. Who knows it might help you
-out with not miss your old IDE & might end up liking Vim as well.
+Now a "_bare minimum_" can be interpreted differently based on who you're asking
+& that's OK too! You can trim out the unecessary configurations (_which you feel
+isn't a necessity_) whenever you want to.
+
+That said, following are some core \_IDE-like features which Jarvim provides &
+configures automatically for you:
+
+- Language Server Protocol (LSP) with autocompletion, snippet support & much
+  more.
+- Faster & smarter syntax highlighting with Treesitter.
+- Better file explorer & navigation.
+- Integrated plugin management configurations
+
+_...more such core IDE-like features will be added if/when I come across any.
+But if you believe I missed out on some core IDE-like feature, let me know about
+it!_
 
 ## Goals of the Project
 
-Lots other similar projects already exist if you're aware of the Vim community.
-Some such projects include; [LunarVim](https://github.com/LunarVim/LunarVim),
-[NvChad](https://github.com/NvChad/NvChad) & so on. So, Jarvim has to deliver
-something different the other mature projects doesn't. As such, the project has
-stric adherances to the following goals.
+As mentioned earlier, a handful of similar projects already exists -
+[LunarVim](https://github.com/LunarVim/LunarVim),
+[NvChad](https://github.com/NvChad/NvChad) & so on. These projects provide
+configurations which are tightly coupled & hence are difficult to customise to
+suit a user's personalized needs. As such, Jarvim tries to resolve those
+concerns by stay out of the way of the user's opinion & their needs.
+
+The goals of Jarvim is minimal, simple & unopinionated which means you're in
+control of how your Neovim experience will be. And Jarvim is nothing more than a
+helping hand to get you started on that journey! 😆
+
+That said, here are the goals of the project:
 
 - **Provide an IDE-like Behaviour**: Jarvim aims to provide an IDE-like
   experience right out-of-the-box. You no longer have to spend hours (or even
@@ -54,64 +66,48 @@ stric adherances to the following goals.
   IDE-like experience**" within Neovim while still keeping in mind the above
   goals.
 
-## Prerequisites & Good-to-Know Info
+## Supported Operating Systems & Environments
 
-For Jarvim to provide an IDE-like experience it requires some prerequisite
-dependencies to work properly. Hence, here's a brief list of all the caveats you
-need to be aware of before using Jarvim.
+Jarvim has been extensively tested & developed on an Unix-like environment. And
+hence, it's **recommended** to use Jarvim on a Unix-based system as well. So, if
+you're a Mac/Linux user then you're good to go! But hard luck for all Windows
+users out there.
 
-"_Dependencies_" for Jarvim:
+The decision to support only Unix-based systems has been made after genuine
+considerations of the lack of good `gcc` alternatives on Windows 10/11. Without
+`gcc` Treesitter willn't work as expected & you'll run into hard-to-debug build
+errors.
 
-- `git` for [`packer.nvim`](https://github.com/wbthomasan/packer.nvim).
-- `gcc` for
-  [`nvim-treesitter`](https://github.com/nvim-treesitter/nvim-treesitter)
+But on a brighter note, you can now use Windows Subsystem for Linux (WSL) on
+both Windows 10/11. enabling you to use a Linux environment right within
+Windows. You can use Jarvim there instead & you'll not face any issues.
 
-**NOTE**: For all Windows users out there, please save yourself the pain & use
-Neovim inside a WSL environment instead. It's a pain to set up Treesitter to
-work properly on Windows 10/11. If you still feel adventurous, refer to the
-official `nvim-treesitter` wikia.
+That said, before installing Jarvim, please run the following command to check
+all dependencies of the project exists & is available on `PATH` in your system:
+
+<!-- markdownlint-disable -->
+
+```
+curl -fsSL https://tiny.one/check-jarvim-dependencies | bash
+```
+
+<!-- markdownlint-disable -->
 
 ## Installation Procedures
 
-Jarvim is super easy to install, you only got to invoke a single line of Shell
-command to download & setup the configurations! So, here's how you can get them
-based on the platform of your choice.
+Once you performed a customary check for all the necessary dependencies, its
+time to install Jarvim now.
 
-**NOTE**: For Windows 10/11 users out there, use
-[Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl)
+Jarvim has been kept easy-to-install with an intention which means you only need
+to invoke a single `curl` command & you're all set! As such the following
+command will download the Jarvim configurations to your system, install the
+necessary plugins & configure the editor as specified!
 
 ```shell
-curl -fsSL https://raw.githubusercontent.com/Jarmos-san/jarvim/main/install.sh | bash
+curl -fsSL https://tiny.one/install-jarvim | bash
 ```
 
-**Disclaimer**: Its never recommended to run arbitrary shell scripts for obvious
-security reasons! So, it's strongly suggested to take a look at what the script
-does before executing it.
-
-## TODO & Yet-To-Be Added Features
-
-Jarvim offers the user to setup a variety of modern IDE-like features to Neovim
-without the pain of spending days or even weeks trying to configuring things.
-So, to get a gist of all the features Jarvim will provide you are listed below;
-
-- Native Language-Server Protocol (LSP) support
-- Custom Statusline & Tabline to provide useful info the way IDEs does
-- Add file explorer support
-- Enable version-control features
-
-...and those were only a few to name. Do you feel there's a very useful IDE-like
-feature missing out? Then open an Issue/Discussion thread for the community to
-discuss about it. And then send over a PR with your additions.
-
-**NOTE**: Jarvim is ever evolving & is probably subject to the needs of the
-community. So, to get a detailed idea of what all features are included with
-Jarvim, refer to the
-["Available Features"](https://github.com/Jarmos-san/jarvim/wiki/Introducing-Jarvim!#available-features)
-section of the wikia.
-
-That said, any sort of contributions will be greatly appreciated. But before you
-proceed ahead with contributing something, do take a thorough look at the
-[**CONTRIBUTION**](./.github/CONTRIBUTING.md) guidelines.
+Yes, it's that simple to install!
 
 ## Credits & Acknowledgement
 
@@ -127,25 +123,25 @@ projects as well.
 - [NvChad/NvChad](https://github.com/NvChad/NvChad) maintained by
   ["Siduck"](https://github.com/siduck76)
 
-## Consider Supporting Jarvim
-
-Jarvim is a community-maintained project. Without the community effort the
-project would have been nothing more than "just any other **personal** Neovim
-configuration". Hence your support in whatever means will be quite helpful
-towards maintaining the project.
-
-You can support this project by:
-
-1. Contributing by reporting issues, bugs & improvements.
-2. Help maintain the project when necessary.
-3. And/or send out a
-   [Token of Appreciation](https://www.buymeacoffee.com/jarmos) with some
-   :heart:
-
-**NOTE**: Do refer to the [**CONTRIBUTING**](./.github/CONTRIBUTING.md)
-guidelines before proceeding ahead with a PR.
+## Contribute to & Support the Project
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/H2H567ZQH)
+
+Jarvim started out as personal requirement but there's only so much progress a
+single person can make for the project. Hence, any sort of support &
+contributions to the project are heartily welcomed! And here's how you can
+contribute and/or support the project:
+
+1. Contributing by reporting issues, bugs & improvements.
+2. Offer a helping hand by reaching out as a co-maintainer of the project.
+3. Send a [simple "thank you" message](https://saythanks.io/to/Jarmos-san) if
+   the project helped you out in any way.
+4. And/or [buy me a book](https://www.buymeacoffee.com/jarmos) which you think I
+   should definitely give a read!
+
+And for the interested contributors (and/or maintainers) out there, please give
+the [**CONTRIBUTION**](./.github/CONTRIBUTING.md) guidelines a thorough read
+before sending a PR or two.
 
 ## License & Usage Terms & Conditions
 
