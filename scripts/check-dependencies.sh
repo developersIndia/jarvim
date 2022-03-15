@@ -23,6 +23,8 @@
 
 set -Eeuo pipefail
 
+trap cleanup SIGINT SIGTERM ERR EXIT
+
 # TODO: Check for neovim as well once the following issue has been fixed
 #* https://github.com/kdabir/has/issues/64
 

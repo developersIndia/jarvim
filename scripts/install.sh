@@ -24,6 +24,8 @@
 
 set -Eeuo pipefail
 
+trap cleanup SIGINT SIGTERM ERR EXIT
+
 # URL for info about the latest release of the project
 URL_ENDPOINT="https://api.github.com/repos/Jarmos-san/Jarvim/releases/latest"
 
