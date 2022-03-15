@@ -27,7 +27,30 @@ trap cleanup SIGINT SIGTERM ERR EXIT
 
 # TODO: Write a usage guide function to invoke when necessary
 
-# TODO: Write a cleanup function
+################################################################################
+################################################################################
+#                                                                              #
+# Cleanup function to be invoked when or if script is terminated, errored out, #
+# completed with exit code 0.                                                  #
+#                                                                              #
+# GLOBALS:                                                                     #
+#   None                                                                       #
+#                                                                              #
+# ARGUMENTS:                                                                   #
+#   None                                                                       #
+#                                                                              #
+# OUTPUTS:                                                                     #
+#   None                                                                       #
+#                                                                              #
+# RETURNS:                                                                     #
+#   None                                                                       #
+#                                                                              #
+################################################################################
+################################################################################
+function cleanup() {
+  trap - SIGINT SIGTERM ERR EXIT
+  unset DEPENDENCIES
+}
 
 # TODO: Write a functional wrapper to introduce coloured STDOUT of the script
 
