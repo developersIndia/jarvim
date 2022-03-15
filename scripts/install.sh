@@ -28,7 +28,33 @@ trap cleanup SIGINT SIGTERM ERR EXIT
 
 # TODO: Write a usage guide function to invoke when necessary
 
-# TODO: Write a cleanup function
+################################################################################
+################################################################################
+#                                                                              #
+# Cleanup function to be invoked when or if script is terminated, errored out, #
+# completed with exit code 0.                                                  #
+#                                                                              #
+# GLOBALS:                                                                     #
+#   None                                                                       #
+#                                                                              #
+# ARGUMENTS:                                                                   #
+#   None                                                                       #
+#                                                                              #
+# OUTPUTS:                                                                     #
+#   None                                                                       #
+#                                                                              #
+# RETURNS:                                                                     #
+#   None                                                                       #
+#                                                                              #
+################################################################################
+################################################################################
+function cleanup() {
+  trap - SIGINT SIGTERM ERR EXIT
+
+  rm --recursive --force "$DOWNLOAD_DIR"
+
+  unset URL_ENDPOINT DOWNLOAD_URL DOWNLOAD_DIR
+}
 
 # TODO: Write a functional wrapper to introduce coloured STDOUT of the script
 
@@ -48,21 +74,6 @@ DOWNLOAD_URL=$(curl --fail --silent --show-error --location $URL_ENDPOINT \
 
 # Temporary directory to download the gzipped file into
 DOWNLOAD_DIR=$(mktemp --directory)
-
-################################################################################
-# Clean up files & folders which aren't needed for Neovim to work properly
-# Globals:
-#   None
-# Arguments:
-#   None
-################################################################################
-function cleanup() {
-  rm --recursive --force "$DOWNLOAD_DIR"
-  echo "Cleaning up unwanted downloaded stuff!"
-}
-
-#* Ref: https://stackoverflow.com/a/34676160/8604951
-trap cleanup EXIT
 
 # Download the gzipped file to the temp directory mentioned above
 curl --silent --output "$DOWNLOAD_DIR/jarvim.tar.gz" "$DOWNLOAD_URL"
