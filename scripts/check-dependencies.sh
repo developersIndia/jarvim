@@ -46,13 +46,13 @@ trap cleanup SIGINT SIGTERM ERR EXIT
 ################################################################################
 function usage() {
   cat << EOF
-    Usage: $(basename "${BASH_SOURCE[0]}") [-h] [-v] [-f] -p param_value arg1 [arg2...]
+  Usage: $(basename "${BASH_SOURCE[0]}") [-h] [-v] [-f] -p param_value arg1 [arg2...]
 
-    Script description here.
+  Script description here.
 
-    Available options:
-    -h, --help      Print this help and exit
-    -v, --verbose   Print script debug info
+  Available options:
+  -h, --help      Print this help and exit
+  -v, --verbose   Print script debug info
 EOF
   exit
 }
@@ -191,11 +191,6 @@ function parse_params() {
     esac
     shift
   done
-
-  # args=("$@")
-
-  # # check required params and arguments
-  # [[ ${#args[@]} -eq 0 ]] && die "Missing script arguments"
 
   return 0
 }
