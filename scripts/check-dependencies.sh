@@ -80,7 +80,28 @@ function setup_colors() {
   fi
 }
 
-# TODO: Write function wrapper to write messages instead of using "echo"
+################################################################################
+################################################################################
+#                                                                              #
+# Function wrapper to print messages to the STDERROR properly                  #
+#                                                                              #
+# GLOBALS:                                                                     #
+#   None                                                                       #
+#                                                                              #
+# ARGUMENTS:                                                                   #
+#   None                                                                       #
+#                                                                              #
+# OUTPUTS:                                                                     #
+#   Prints a specified message to STDERROR                                     #
+#                                                                              #
+# RETURNS:                                                                     #
+#   None                                                                       #
+#                                                                              #
+################################################################################
+################################################################################
+function msg() {
+  echo >&2 -e "${1-}"
+}
 
 # TODO: Write functional wrapper to kill the script when needed
 
