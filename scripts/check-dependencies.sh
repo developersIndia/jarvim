@@ -25,6 +25,18 @@ set -Eeuo pipefail
 
 trap cleanup SIGINT SIGTERM ERR EXIT
 
+# TODO: Write a usage guide function to invoke when necessary
+
+# TODO: Write a cleanup function
+
+# TODO: Write a functional wrapper to introduce coloured STDOUT of the script
+
+# TODO: Write function wrapper to write messages instead of using "echo"
+
+# TODO: Write functional wrapper to kill the script when needed
+
+# TODO: Write functional wrapper to parse the parameters of the script
+
 # TODO: Check for neovim as well once the following issue has been fixed
 #* https://github.com/kdabir/has/issues/64
 

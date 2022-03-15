@@ -26,6 +26,18 @@ set -Eeuo pipefail
 
 trap cleanup SIGINT SIGTERM ERR EXIT
 
+# TODO: Write a usage guide function to invoke when necessary
+
+# TODO: Write a cleanup function
+
+# TODO: Write a functional wrapper to introduce coloured STDOUT of the script
+
+# TODO: Write function wrapper to write messages instead of using "echo"
+
+# TODO: Write functional wrapper to kill the script when needed
+
+# TODO: Write functional wrapper to parse the parameters of the script
+
 # URL for info about the latest release of the project
 URL_ENDPOINT="https://api.github.com/repos/Jarmos-san/Jarvim/releases/latest"
 
