@@ -130,7 +130,48 @@ function die() {
   exit "$code"
 }
 
-# TODO: Write functional wrapper to parse the parameters of the script
+################################################################################
+################################################################################
+#                                                                              #
+# Functional wrapper to parse parameters of the script                         #
+#                                                                              #
+# GLOBALS:                                                                     #
+#   None                                                                       #
+#                                                                              #
+# ARGUMENTS:                                                                   #
+#   None                                                                       #
+#                                                                              #
+# OUTPUTS:                                                                     #
+#   A specified message which should be passed as arguments                    #
+#                                                                              #
+# RETURNS:                                                                     #
+#   True if parsing was successful                                             #
+#                                                                              #
+################################################################################
+################################################################################
+function parse_params() {
+
+  while :; do
+    case "${1-}" in
+    -h | --help) usage ;;
+    -v | --verbose) set -x ;;
+    --no-color) NO_COLOR=1 ;;
+    -?*) die "Unknown option: $1" ;;
+    *) break ;;
+    esac
+    shift
+  done
+
+  # args=("$@")
+
+  # # check required params and arguments
+  # [[ ${#args[@]} -eq 0 ]] && die "Missing script arguments"
+
+  return 0
+}
+
+parse_params "$@"
+setup_colors
 
 # TODO: Check for neovim as well once the following issue has been fixed
 #* https://github.com/kdabir/has/issues/64
