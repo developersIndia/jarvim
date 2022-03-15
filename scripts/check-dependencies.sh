@@ -103,7 +103,32 @@ function msg() {
   echo >&2 -e "${1-}"
 }
 
-# TODO: Write functional wrapper to kill the script when needed
+################################################################################
+################################################################################
+#                                                                              #
+# Functional wrapper to "kill the script's execution" when needed              #
+#                                                                              #
+# GLOBALS:                                                                     #
+#   None                                                                       #
+#                                                                              #
+# ARGUMENTS:                                                                   #
+#   msg:  (position) A message to print to STDOUT                              #
+#   code: (position) An exit code (default is 1)                               #
+#                                                                              #
+# OUTPUTS:                                                                     #
+#   A specified message which should be passed as arguments                    #
+#                                                                              #
+# RETURNS:                                                                     #
+#   None                                                                       #
+#                                                                              #
+################################################################################
+################################################################################
+function die() {
+  local msg=$1
+  local code=${2-1}
+  msg "$msg"
+  exit "$code"
+}
 
 # TODO: Write functional wrapper to parse the parameters of the script
 
