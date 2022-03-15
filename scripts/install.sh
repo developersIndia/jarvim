@@ -22,7 +22,7 @@
 ################################################################################
 ################################################################################
 
-set -e pipefail
+set -Eeuo pipefail
 
 # URL for info about the latest release of the project
 URL_ENDPOINT="https://api.github.com/repos/Jarmos-san/Jarvim/releases/latest"
