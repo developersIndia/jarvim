@@ -1,13 +1,25 @@
 #!/usr/bin/env bash
-
-###############################################################################
-# Script to check if all dependencies for Jarvim are available or not
-###############################################################################
-#
-###############################################################################
-# License: MIT License
-# Author:  Somraj Saha
-###############################################################################
+################################################################################
+#               Jarvim Dependencies Checking Script                            #
+#                                                                              #
+# Use this script to check all the dependencies necessary for Neovim to work   #
+# properly with Jarvim's configs are available on the location machine.        #
+#                                                                              #
+################################################################################
+################################################################################
+################################################################################
+#                                                                              #
+# Copyright (C) 2022-Present Somraj Saha                                       #
+#                                                                              #
+# The contents of this script are licensed under the open-source MIT license.  #
+# So, feel free to share, copy, distribute the contents of this script as your #
+# wish. Accredition isn't a requirement but much appreciated!                  #
+#                                                                              #
+# For more information on the licensing details, please refer to the *LICENSE* #
+#                                                                              #
+################################################################################
+################################################################################
+################################################################################
 
 # TODO: Check for neovim as well once the following issue has been fixed
 #* https://github.com/kdabir/has/issues/64

@@ -1,13 +1,26 @@
 #!/usr/bin/env bash
-#
-###############################################################################
-# Script to install Jarvim
-###############################################################################
-#
-###############################################################################
-# License: MIT License
-# Author:  Somraj Saha
-###############################################################################
+################################################################################
+#                       Jarvim Installation Script                             #
+#                                                                              #
+# Use this script to install, configure & setup a Neovim development           #
+# environment on your local machine. It's supposed to be used as a one-click   #
+# solution to all your IDE-like needs on Neovim (and in the terminal)!         #
+#                                                                              #
+################################################################################
+################################################################################
+################################################################################
+#                                                                              #
+# Copyright (C) 2022-Present Somraj Saha                                       #
+#                                                                              #
+# The contents of this script are licensed under the open-source MIT license.  #
+# So, feel free to share, copy, distribute the contents of this script as your #
+# wish. Accredition isn't a requirement but much appreciated!                  #
+#                                                                              #
+# For more information on the licensing details, please refer to the *LICENSE* #
+#                                                                              #
+################################################################################
+################################################################################
+################################################################################
 
 set -e pipefail
 
