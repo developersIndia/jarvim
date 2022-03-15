@@ -48,7 +48,7 @@ function usage() {
   cat << EOF
   Usage: $(basename "${BASH_SOURCE[0]}") [-h] [-v] [-f] -p param_value arg1 [arg2...]
 
-  Script description here.
+  Check if certain dependencies which are required for Jarvim to work properly are installed & available on the system PATH.
 
   Available options:
   -h, --help      Print this help and exit
