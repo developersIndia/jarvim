@@ -26,7 +26,37 @@ set -Eeuo pipefail
 
 trap cleanup SIGINT SIGTERM ERR EXIT
 
-# TODO: Write a usage guide function to invoke when necessary
+################################################################################
+################################################################################
+#                                                                              #
+# Prints a helpful "usage guide" whenever needed                               #
+#                                                                              #
+# GLOBALS:                                                                     #
+#   None                                                                       #
+#                                                                              #
+# ARGUMENTS:                                                                   #
+#   None                                                                       #
+#                                                                              #
+# OUTPUTS:                                                                     #
+#   Write a helpful "usage guide" to STDOUT                                    #
+#                                                                              #
+# RETURNS:                                                                     #
+#   None                                                                       #
+#                                                                              #
+################################################################################
+################################################################################
+function usage() {
+  cat << EOF
+  Usage: $(basename "${BASH_SOURCE[0]}") [-h] [-v] [-f]
+
+  Install, configure & setup Jarvim with a single command using this script!
+
+  Available options:
+  -h, --help      Print this help and exit
+  -v, --verbose   Print script debug info
+EOF
+  exit
+}
 
 ################################################################################
 ################################################################################
