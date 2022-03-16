@@ -168,7 +168,42 @@ function die() {
   exit "$code"
 }
 
-# TODO: Write functional wrapper to parse the parameters of the script
+################################################################################
+################################################################################
+#                                                                              #
+# Functional wrapper to parse parameters of the script                         #
+#                                                                              #
+# GLOBALS:                                                                     #
+#   flags: Some flags that you should pass to the script                       #
+#   param: Some parameters to pass to the script                               #
+#                                                                              #
+# ARGUMENTS:                                                                   #
+#   msg:  (position) A message to print to STDOUT                              #
+#   code: (position) An exit code (default is 1)                               #
+#                                                                              #
+# OUTPUTS:                                                                     #
+#   A specified message which should be passed as arguments                    #
+#                                                                              #
+# RETURNS:                                                                     #
+#   True if parsing was successful                                             #
+#                                                                              #
+################################################################################
+################################################################################
+function parse_params() {
+
+  while :; do
+    case "${1-}" in
+    -h | --help) usage ;;
+    -v | --verbose) set -x ;;
+    --no-color) NO_COLOR=1 ;;
+    -?*) die "Unknown option: $1" ;;
+    *) break ;;
+    esac
+    shift
+  done
+
+  return 0
+}
 
 # URL for info about the latest release of the project
 URL_ENDPOINT="https://api.github.com/repos/Jarmos-san/Jarvim/releases/latest"
