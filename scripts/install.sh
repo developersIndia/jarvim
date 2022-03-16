@@ -205,6 +205,9 @@ function parse_params() {
   return 0
 }
 
+parse_params "$@"
+setup_colors
+
 # URL for info about the latest release of the project
 URL_ENDPOINT="https://api.github.com/repos/Jarmos-san/Jarvim/releases/latest"
 
