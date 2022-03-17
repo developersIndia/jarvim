@@ -109,14 +109,14 @@ function cleanup() {
 #                                                                              #
 ################################################################################
 ################################################################################
-function setup_colors() {
-  if [[ -t 2 ]] && [[ -z "${NO_COLOR-}" ]] && [[ "${TERM-}" != "dumb" ]]; then
-    NOCOLOR='\e[0m' RED='\e[0;31m' GREEN='\e[0;32m' ORANGE='\e[0;33m' \
-    BLUE='\e[0;34m' PURPLE='\e[0;35m' CYAN='\e[0;36m' YELLOW='\e[1;33m'
-  else
-    NOCOLOR='' RED='' GREEN='' ORANGE='' BLUE='' PURPLE='' CYAN='' YELLOW=''
-  fi
-}
+# function setup_colors() {
+#   if [[ -t 2 ]] && [[ -z "${NO_COLOR-}" ]] && [[ "${TERM-}" != "dumb" ]]; then
+#     NOCOLOR='\e[0m' RED='\e[0;31m' GREEN='\e[0;32m' ORANGE='\e[0;33m' \
+#     BLUE='\e[0;34m' PURPLE='\e[0;35m' CYAN='\e[0;36m' YELLOW='\e[1;33m'
+#   else
+#     NOCOLOR='' RED='' GREEN='' ORANGE='' BLUE='' PURPLE='' CYAN='' YELLOW=''
+#   fi
+# }
 
 ################################################################################
 ################################################################################
@@ -206,7 +206,7 @@ function parse_params() {
 }
 
 parse_params "$@"
-setup_colors
+# setup_colors
 
 # URL for info about the latest release of the project
 URL_ENDPOINT="https://api.github.com/repos/Jarmos-san/Jarvim/releases/latest"
