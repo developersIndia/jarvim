@@ -20,7 +20,7 @@ Now a "_bare minimum_" can be interpreted differently based on who you're asking
 & that's OK too! You can trim out the unecessary configurations (_which you feel
 isn't a necessity_) whenever you want to.
 
-That said, following are some core \_IDE-like features which Jarvim provides &
+That said, following are some core IDE-like features which Jarvim provides &
 configures automatically for you:
 
 - Language Server Protocol (LSP) with autocompletion, snippet support & much
