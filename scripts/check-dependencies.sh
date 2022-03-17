@@ -79,7 +79,7 @@ EOF
 ################################################################################
 function cleanup() {
   trap - SIGINT SIGTERM ERR EXIT
-  unset DEPENDENCIES
+  unset DEPENDENCIES HAS_ALLOW_UNSAFE
 }
 
 ################################################################################
@@ -103,61 +103,10 @@ function cleanup() {
 ################################################################################
 function setup_colors() {
   if [[ -t 2 ]] && [[ -z "${NO_COLOR-}" ]] && [[ "${TERM-}" != "dumb" ]]; then
-    NOCOLOR='\e[0m' RED='\e[0;31m' GREEN='\e[0;32m' ORANGE='\e[0;33m' \
-    BLUE='\e[0;34m' PURPLE='\e[0;35m' CYAN='\e[0;36m' YELLOW='\e[1;33m'
+    NOCOLOR='\e[0m' GREEN='\e[0;32m' YELLOW='\e[1;33m'
   else
-    NOCOLOR='' RED='' GREEN='' ORANGE='' BLUE='' PURPLE='' CYAN='' YELLOW=''
+    NOCOLOR='' GREEN='' YELLOW=''
   fi
-}
-
-################################################################################
-################################################################################
-#                                                                              #
-# Function wrapper to print messages to the STDERROR properly                  #
-#                                                                              #
-# GLOBALS:                                                                     #
-#   None                                                                       #
-#                                                                              #
-# ARGUMENTS:                                                                   #
-#   None                                                                       #
-#                                                                              #
-# OUTPUTS:                                                                     #
-#   Prints a specified message to STDERROR                                     #
-#                                                                              #
-# RETURNS:                                                                     #
-#   None                                                                       #
-#                                                                              #
-################################################################################
-################################################################################
-function msg() {
-  echo >&2 -e "${1-}"
-}
-
-################################################################################
-################################################################################
-#                                                                              #
-# Functional wrapper to "kill the script's execution" when needed              #
-#                                                                              #
-# GLOBALS:                                                                     #
-#   None                                                                       #
-#                                                                              #
-# ARGUMENTS:                                                                   #
-#   msg:  (position) A message to print to STDOUT                              #
-#   code: (position) An exit code (default is 1)                               #
-#                                                                              #
-# OUTPUTS:                                                                     #
-#   A specified message which should be passed as arguments                    #
-#                                                                              #
-# RETURNS:                                                                     #
-#   None                                                                       #
-#                                                                              #
-################################################################################
-################################################################################
-function die() {
-  local msg=$1
-  local code=${2-1}
-  msg "$msg"
-  exit "$code"
 }
 
 ################################################################################
