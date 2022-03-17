@@ -46,7 +46,7 @@ trap cleanup SIGINT SIGTERM ERR EXIT
 ################################################################################
 function usage() {
   cat << EOF
-  Usage: $(basename "${BASH_SOURCE[0]}") [-h] [-v] [-f] -p param_value arg1 [arg2...]
+  Usage: check-dependencies.sh [-h | --help] [-v | --verbose]
 
   Check if certain dependencies which are required for Jarvim to work properly are installed & available on the system PATH.
 
