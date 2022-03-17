@@ -229,3 +229,14 @@ if [[ -d "$HOME/.config/nvim" ]]; then
 fi
 
 # TODO: Extract the contents of the downloaded gzipped file
+if [[ ! -d "$HOME/.config/nvim" ]]; then
+  mkdir -p "$HOME/.config/nvim"
+fi
+
+echo "Extracting Jarvim configs to $HOME/.config/nvim"
+
+tar --extract --file="$DOWNLOAD_DIR/jarvim.tar.gz"
+
+# Copy only the contents of the "configs" directory to the destination.
+# See this StackExchange thread for more info: https://askubuntu.com/a/86891
+cp --archive "jarvim/configs/." "$HOME/.config/nvim"
