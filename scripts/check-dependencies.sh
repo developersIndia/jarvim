@@ -205,10 +205,10 @@ export HAS_ALLOW_UNSAFE=y
 
 DEPENDENCIES=("curl" "tar" "gcc" "git" "nvim")
 
-echo -e "Performing dependency checks!\n"
+echo -e "${GREEN}Performing dependency checks!\n${NOCOLOR}"
 
 for DEPENDENTS in "${DEPENDENCIES[@]}"; do
   curl --silent --location "https://git.io/_has" | bash -s "$DEPENDENTS"
 done
 
-echo -e "\nDependency checks complete! If a dependecy is missing from your system please install it before downloading Jarvim."
+echo -e "\n${YELLOW}Please install any missing \"dependencies\" (if there're any)!"
