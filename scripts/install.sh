@@ -228,7 +228,6 @@ if [[ -d "$HOME/.config/nvim" ]]; then
   tar --create --gzip --file="$HOME/.backups/nvim.tgz" "$HOME/.config/nvim"
 fi
 
-# TODO: Extract the contents of the downloaded gzipped file
 if [[ ! -d "$HOME/.config/nvim" ]]; then
   mkdir -p "$HOME/.config/nvim"
 fi
