@@ -223,6 +223,9 @@ DOWNLOAD_DIR=$(mktemp --directory)
 curl --silent --output "$DOWNLOAD_DIR/jarvim.tar.gz" "$DOWNLOAD_URL"
 echo "Downloaded Jarvim to $DOWNLOAD_DIR"
 
-# TODO: Backup the existing Neovim configurations (if they exists)
+if [[ -d "$HOME/.config/nvim" ]]; then
+  echo "Found existing Neovim configs, creating a backup."
+  tar --create --gzip --file="$HOME/.backups/nvim.tgz" "$HOME/.config/nvim"
+fi
 
 # TODO: Extract the contents of the downloaded gzipped file
