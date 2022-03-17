@@ -198,10 +198,12 @@ function parse_params() {
 parse_params "$@"
 setup_colors
 
-# TODO: Check for neovim as well once the following issue has been fixed
-#* https://github.com/kdabir/has/issues/64
+# The following line is a necessity for "has" to properly identify the
+# "nvim" binary. Without it, the availability check will fail as described here:
+# https://github.com/kdabir/has/issues/64
+export HAS_ALLOW_UNSAFE=y
 
-DEPENDENCIES=("curl" "tar" "gcc" "git")
+DEPENDENCIES=("curl" "tar" "gcc" "git" "nvim")
 
 echo -e "Performing dependency checks!\n"
 
