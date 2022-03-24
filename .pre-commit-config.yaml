@@ -13,7 +13,13 @@ repos:
   #   rev: v0.8.0
   #   hooks:
   #     - id: shellcheck
+
+  - repo: https://github.com/Jarmos-san/shellcheck-precommit
+    rev: main
+    hooks:
+      - id: shellcheck-system
+
   - repo: https://github.com/pre-commit/mirrors-prettier
-    rev: v2.5.1
+    rev: v2.6.0
     hooks:
       - id: prettier
