@@ -1,78 +1,108 @@
 --[[
-Module for installing plugins.
-Add/remove or configure plugins as per your needs over here
+Module for installing plugins
+Add, remove or configure plugins as per your needs over here
 --]]
 
-local cmd = vim.cmd
-local fn = vim.fn
-local execute = vim.nvim_exec_command
-
 -- "packer.nvim" installation path
-local install_path = fn.stdpath 'data' .. '/site/pack/packer/opt/packer.nvim'
+local install_path = vim.fn.stdpath("data") .. "/site/pack/packer/opt/packer.nvim"
 
 -- Ensure a local clone of "packer.nvim" exists
-if fn.empty(fn.glob(install_path)) > 0 then
-    execute(
-        '!git clone https://github.com/wbthomason/packer.nvim'
-            .. ' '
-            .. install_path
-    )
+if vim.fn.empty(vim.fn.glob(install_path)) > 0 then
+    packer_bootstrap = vim.fn.system({
+        "git",
+        "clone",
+        "--depth",
+        "1",
+        "https://github.com/wbthomason/packer.nvim",
+        install_path,
+    })
 end
 
 -- Load "packer.nvim"
-cmd [[ packadd! packer.nvim ]]
+vim.cmd([[ packadd! packer.nvim ]])
 
-local packer = require 'packer'
-local use = packer.use
+require("packer").startup({
+    function(use)
+        use({
+            "wbthomason/packer.nvim",
+            opt = true,
+        })
 
--- Install rest of the plugins for later use
-packer.startup(function()
-
-    use { -- Install packer.nvim
-        'wbthomason/packer.nvim',
-        opt = true
-    }
-
-    use { -- Galaxyline statusline
-        'glepnir/galaxyline.nvim',
-        branch = 'main',
-        config = function ()
-            require 'config.statusline'
-        end,
-        requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-    }
-
-    use { -- Plugin for toggling comments
-        'b3nj5m1n/kommentary',
-        event = { 'BufRead', 'BufNewFile' },
-        config = require('conf.kommentary').config
-    }
-
-    use { -- Plugin for better syntax highlighting & much more
-        'nvim-treesitter/nvim-treesitter',
-        event = { 'BufRead', 'BufNewFile' },
-        config = require(conf.treesitter).config,
-        requires = {
-            {
-                'nvim-treesitter/nvim-treesitter-refactor',
-                after = 'nvim-treesitter'
+        use({
+            "nvim-treesitter/nvim-treesitter",
+            event = { "VimEnter" },
+            requires = {
+                {
+                    "p00f/nvim-ts-rainbow",
+                    after = "nvim-treesitter",
+                },
             },
-            {
-                'nvim-treesitter/nvim-treesitter-textobjects',
-                after = 'nvim-treesitter'
+            run = ":TSUpdate",
+            config = function()
+                require("confs.treesitter").config()
+            end,
+        })
+
+        use({
+            "echasnovski/mini.nvim",
+            event = { "BufEnter" },
+            branch = "stable",
+            setup = function()
+                require("confs.mini_nvim").setup()
+            end,
+            config = function()
+                require("confs.mini_nvim").config()
+            end,
+            requires = {
+                "kyazdani42/nvim-web-devicons",
+                after = "echasnovski/mini.nvim",
             },
-            -- {
-            --     'lewis6991/spellsitter.nvim',
-            --     after = 'nvim-treesitter',
-            --     config = function()
-            --         require('spellsitter').setup {
-            --             hl = 'SpellBad',
-            --             captures = {},
-            --         }
-            --     end
-            -- },
+        })
+
+        use({
+            "kyazdani42/nvim-tree.lua",
+            opt = true,
+            module = "nvim-tree",
+            cmd = "NvimTreeToggle",
+            requires = {
+                "kyazdani42/nvim-web-devicons",
+            },
+            setup = function()
+                require("confs.nvim_tree").setup()
+            end,
+            config = function()
+                require("confs.nvim_tree").config()
+            end,
+        })
+
+        use({
+            "lewis6991/gitsigns.nvim",
+            requires = {
+                "nvim-lua/plenary.nvim",
+            },
+            config = function()
+                require("confs.gitsigns").config()
+            end,
+        })
+
+        use({
+            -- TODO: Configure this plugin to lazy-load
+            "gpanders/editorconfig.nvim",
+        })
+
+        if packer_boostrap then
+            require("packer").sync()
+        end
+    end,
+
+    config = {
+        profile = {
+            enable = true,
         },
-        run = ':TSUpdate',
-    }
-end)
-
+        display = {
+            open_fn = function()
+                return require("packer.util").float()
+            end,
+        },
+    },
+})
