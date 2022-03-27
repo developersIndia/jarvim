@@ -109,6 +109,41 @@ curl -fsSL https://tiny.one/install-jarvim | bash
 
 Yes, it's that simple to install!
 
+## Usage Disclaimer
+
+Please bear in mind, Jarvim is nowhere production-ready! As Neovim develops, so
+will Jarvim. For example, as the Neovim core devs are in talks for pushing a
+major refactor of the LSP API. And chances are, in the near future it might be
+easier to download & setup individual server with much more ease.
+
+The upcoming Neovim v0.7 will also bring new features & major changes to the
+`vim` "_standard library_" as well. For example, you might now be able to define
+Autocommands with Lua. And there'll be a convenient function to setup keymaps as
+well! Whenever these features & core changes are introduced to production on the
+`master` branch, Jarvim will be updated accordingly.
+
+And hence, use Jarvim if stability isn't a concern for you!
+
+That said, the following features (or tasks) are either complete/WIP:
+
+- [x] Bare minimum aesthetics like statusline, colorscheme (which is subject to
+      change), indents (buggy as of latest commit), treesitter-based syntax
+      highlighting, etc.
+- [x] Some bare minimum Treesitter parsers for JSON, Markdown, YAML & TOML
+      files.
+- [x] Configure package manager (used
+      [`package.nvim`](https://github.com/whbthomason/package.nvim) because of
+      its popularity).
+- [ ] Lazy-load all plugin configurations.
+- [x] Enable & configure a file-explorer plugin for easier navigation across
+      files & directories.
+- [x] Enable version-control support for `git`.
+- [ ] Enable & configure LSP.
+- [ ] Document all configurations for easier reference.
+
+_... the list isn't complete & will be updated as & when I come up with more
+ideas!_
+
 ## Credits & Acknowledgement
 
 Jarvim stands on the shoulders of the giants within the Neovim community.
