@@ -19,6 +19,6 @@ jobs:
           args: . --check
 
       - name: Run shfmt for shell scripts check
-        uses: luizm/action-sh-checker@v0.3.0
+        uses: luizm/action-sh-checker@v0.4.0
         with:
           sh_checker_shfmt_disable: true
