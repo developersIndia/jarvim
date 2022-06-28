@@ -7,6 +7,10 @@
 
 ## About the Project
 
+**DISCLAIMER**: The project has been **ARCHIVED** since a similar project
+([AstroNvim](https://github.com/AstroNvim/AstroNvim)) already exists! The project
+was started before the author was aware about AstroNvim's existence.
+
 If you've used Vim even briefly before, you would know configuring the editor to
 fit your specific development needs is a time-consuming undertaking. But
 fortunately, there are quite a lot of "_Neovim configuration frameworks_" out
